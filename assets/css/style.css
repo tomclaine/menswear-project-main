@@ -493,7 +493,76 @@
 }
 
 main {
-  height: 5000px;
   background: red;
   width: 100%;
+}
+main .highlight-cate {
+  padding: 50px 0;
+  width: 55%;
+}
+@media (max-width: 768px) {
+  main .highlight-cate {
+    width: 90%;
+  }
+}
+main .highlight-cate .grid {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-areas: "aa bb dd" "aa cc dd";
+}
+@media (max-width: 768px) {
+  main .highlight-cate .grid {
+    grid-template-areas: "aa dd" "bb cc";
+    grid-gap: 10px;
+  }
+}
+main .highlight-cate .grid img {
+  width: 100%;
+  height: 100%;
+}
+main .highlight-cate .grid .item1 {
+  grid-area: aa;
+}
+main .highlight-cate .grid .item1 a {
+  position: relative;
+}
+main .highlight-cate .grid .item1 a .info-item1 {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+main .highlight-cate .grid .item1 a .info-item1 h3 {
+  font-size: 30px;
+  color: white;
+}
+main .highlight-cate .grid .item1 a .info-item1 p {
+  color: white;
+}
+main .highlight-cate .grid .item2 {
+  grid-area: bb;
+}
+main .highlight-cate .grid .item2 a {
+  position: relative;
+}
+main .highlight-cate .grid .item2 a .info-item2 {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+main .highlight-cate .grid .item2 a .info-item2 h3 {
+  font-size: 30px;
+  color: white;
+}
+main .highlight-cate .grid .item2 a .info-item2 p {
+  color: white;
+}
+main .highlight-cate .grid .item3 {
+  grid-area: cc;
+}
+main .highlight-cate .grid .item4 {
+  grid-area: dd;
 }/*# sourceMappingURL=style.css.map */
