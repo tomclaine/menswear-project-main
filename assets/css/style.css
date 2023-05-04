@@ -1,0 +1,499 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.container {
+  width: 100%;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+@media (max-width: 1366px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 420px) {
+  .container {
+    padding: 0 12px;
+  }
+}
+
+.header_top {
+  padding: 0;
+  background: black;
+  height: 40px;
+  color: white;
+  display: flex;
+}
+.header_top .header_top-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (max-width: 1366px) {
+  .header_top .header_top-items {
+    display: none;
+  }
+}
+.header_top .header_top-items ul {
+  padding: 0;
+  height: 40px;
+  margin: 0;
+}
+.header_top .header_top-items ul li {
+  list-style: none;
+  height: 40px;
+  position: relative;
+}
+.header_top .header_top-items ul li span {
+  margin: 0 5px;
+}
+.header_top .header_top-items ul li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+.header_top .header_top-items ul li a span {
+  line-height: 40px;
+  margin: 0 3px;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/assets/images/quan-ao-thoi-trang-nam-routine-min.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .banner {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+.banner .header_main {
+  display: flex;
+  padding: 20px 0;
+}
+.banner .header_main a {
+  text-decoration: none;
+  color: white;
+}
+.banner .header_main ul {
+  padding: 0;
+  display: flex;
+  height: 100%;
+}
+.banner .header_main ul li {
+  list-style: none;
+  align-items: center;
+}
+.banner .header_main ul li a {
+  font-weight: 700;
+}
+.banner .header_main .header_main-logo {
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .banner .header_main .header_main-logo {
+    width: 60%;
+    display: flex;
+  }
+}
+.banner .header_main .header_main-logo a {
+  font-size: 45px;
+  letter-spacing: 10px;
+  font-weight: 700;
+}
+@media (max-width: 1366px) {
+  .banner .header_main .header_main-logo a {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .banner .header_main .header_main-logo a {
+    font-size: 30px;
+  }
+}
+.banner .header_main .header_main-navbar {
+  width: 40%;
+}
+@media (max-width: 1366px) {
+  .banner .header_main .header_main-navbar {
+    width: 60%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .banner .header_main .header_main-navbar {
+    display: none;
+  }
+}
+.banner .header_main .header_main-navbar ul {
+  align-items: center;
+}
+.banner .header_main .header_main-navbar ul li {
+  margin: 0 30px;
+}
+@media (max-width: 1366px) {
+  .banner .header_main .header_main-navbar ul li {
+    margin: 0 10px;
+  }
+}
+.banner .header_main .header_main-navbar ul .dropmenu {
+  position: relative;
+  cursor: pointer;
+}
+.banner .header_main .header_main-navbar ul .dropmenu i {
+  transition: all 0.5s;
+  color: white;
+}
+.banner .header_main .header_main-navbar ul .dropmenu .sub-menu {
+  background: white;
+  position: absolute;
+  top: 25px;
+  z-index: 10;
+  left: 0;
+  min-width: 150px;
+  min-height: 200px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.banner .header_main .header_main-navbar ul .dropmenu .sub-menu li {
+  margin: 0;
+  padding: 0 15px;
+}
+.banner .header_main .header_main-navbar ul .dropmenu .sub-menu li a {
+  display: block;
+  color: black;
+  padding: 5px 0;
+  transition: all 0.3s;
+}
+.banner .header_main .header_main-navbar ul .dropmenu .sub-menu li a:hover {
+  color: red;
+}
+.banner .header_main .header_main-navbar ul .dropmenu:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+}
+.banner .header_main .header_main-navbar ul .dropmenu:hover i {
+  transform: rotate(180deg);
+}
+.banner .header_main .header_main-cart {
+  width: 20%;
+}
+@media (max-width: 768px) {
+  .banner .header_main .header_main-cart {
+    width: 20%;
+    display: flex;
+  }
+}
+.banner .header_main .header_main-cart ul {
+  align-items: center;
+  justify-content: flex-end;
+}
+.banner .header_main .header_main-cart ul li {
+  margin: 0 10px;
+}
+.banner .header_main .header_main-cart ul li i {
+  font-size: 25px;
+}
+@media (max-width: 768px) {
+  .banner .header_main .header_main-cart ul li i {
+    font-size: 18px;
+  }
+}
+.banner .header_main .hamburger {
+  align-items: center;
+  display: none;
+}
+@media (max-width: 768px) {
+  .banner .header_main .hamburger {
+    display: flex;
+    width: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .banner .header_main .hamburger a {
+    margin: 0;
+  }
+}
+.banner .header_main .hamburger a i {
+  font-size: 35px;
+}
+
+.slogan {
+  color: white;
+  border: 8px solid white;
+  position: absolute;
+  min-width: 400px;
+  min-height: 500px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  text-align: center;
+  padding: 10px 0;
+}
+@media (max-width: 768px) {
+  .slogan {
+    display: none;
+  }
+}
+.slogan p {
+  font-size: 25px;
+}
+.slogan h3 {
+  font-size: 80px;
+  margin: 10px 0;
+}
+.slogan i {
+  margin: 10px 0;
+}
+
+.login-area {
+  background: white;
+  min-width: 400px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: all 0.5s;
+}
+@media (max-width: 768px) {
+  .login-area {
+    width: 100vw;
+  }
+}
+.login-area h3 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.login-area form {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 80%;
+}
+.login-area form input {
+  padding: 6px 12px;
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  height: 55px;
+  font-size: 16px;
+}
+.login-area form button {
+  height: 55px;
+  width: 100%;
+  background: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.login-area span {
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+}
+.login-area span i {
+  font-size: 30px;
+  transition: all 0.3s;
+}
+.login-area span i:hover {
+  color: red;
+}
+
+.register-area {
+  background: white;
+  min-width: 400px;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: all 0.5s;
+}
+.register-area h3 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.register-area form {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 80%;
+}
+.register-area form input {
+  padding: 6px 12px;
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  height: 55px;
+  font-size: 16px;
+}
+.register-area form button {
+  height: 55px;
+  width: 100%;
+  background: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.register-area span {
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+}
+.register-area span i {
+  font-size: 30px;
+  transition: all 0.3s;
+}
+.register-area span i:hover {
+  color: red;
+}
+
+.searchTop-area {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0);
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+.searchTop-area .searchTop {
+  width: 100vw;
+  background: white;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+}
+.searchTop-area .searchTop .input-width-btn {
+  position: relative;
+  width: 50%;
+}
+.searchTop-area .searchTop .input-width-btn .form-control {
+  border-radius: 40px;
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+  outline: none;
+  border: 1px solid #ced4da;
+}
+@media (max-width: 768px) {
+  .searchTop-area .searchTop .input-width-btn .form-control {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}
+.searchTop-area .searchTop .input-width-btn button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  border: none;
+  background: white;
+}
+.searchTop-area .searchTop .input-width-btn button i {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.menu-mobile-area {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+.menu-mobile-area .menu-mobile {
+  overflow-x: scroll;
+  width: 80%;
+  height: 100vh;
+  left: 0;
+  background: white;
+  position: absolute;
+}
+.menu-mobile-area .menu-mobile h3 {
+  text-align: center;
+  padding: 20px;
+}
+.menu-mobile-area .menu-mobile ul {
+  padding: 0;
+}
+.menu-mobile-area .menu-mobile ul li {
+  list-style: none;
+}
+.menu-mobile-area .menu-mobile ul li a {
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+  position: relative;
+  color: black;
+  border-bottom: 1px solid #f5f5f5;
+  transition: all 0.3s;
+}
+.menu-mobile-area .menu-mobile ul li a i.icon-change {
+  width: 10%;
+  position: absolute;
+  right: 0;
+}
+.menu-mobile-area .menu-mobile ul li a:hover {
+  color: red;
+}
+.menu-mobile-area .menu-mobile .dropmenu-mobile ul.sub-menu-mobile {
+  display: none;
+}
+.menu-mobile-area .menu-mobile .dropmenu-mobile ul.sub-menu-mobile li {
+  padding-left: 20px;
+}
+.menu-mobile-area .menu-mobile .dropmenu-mobile ul.sub-menu-mobile li a {
+  font-size: 14px;
+}
+.menu-mobile-area .menu-mobile .dropmenu-mobile ul.sub-menu-mobile li a i {
+  transition: all 0.5s;
+}
+.menu-mobile-area .menu-mobile a.login {
+  text-decoration: none;
+  color: black;
+  margin-top: 150px;
+}
+
+main {
+  height: 5000px;
+  background: red;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
