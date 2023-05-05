@@ -1,11 +1,12 @@
 main{
-    background: red;
     width: 100%;
+//section1
     .highlight-cate{
         padding: 50px 0;
         width: 55%;
         @include breakpoint(tablet){
             width: 90%;
+            padding: 30px 0;
         }
         .grid{
             display: grid;
@@ -13,7 +14,7 @@ main{
             grid-template-areas: 
             "aa bb dd"
             "aa cc dd";
-            @include breakpoint(tablet){
+            @include breakpoint(desktop){
                 grid-template-areas: 
                 "aa dd"
                 "bb cc"
@@ -29,18 +30,8 @@ main{
                 a{
                     position: relative;
                     .info-item1{
-                        position: absolute;
                         bottom: 20px;
                         right: 0;
-                        background: rgba(0, 0, 0, 0.5);
-                        padding: 20px;
-                        h3{
-                            font-size: 30px;
-                            color: white;
-                        }
-                        p{
-                            color: white;
-                        }
                     }
                 }
             }
@@ -48,28 +39,103 @@ main{
                 grid-area: bb;
                 a{
                     position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     .info-item2{
-                        position: absolute;
-                        bottom: 20px;
-                        right: 0;
-                        background: rgba(0, 0, 0, 0.5);
-                        padding: 20px;
-                        h3{
-                            font-size: 30px;
-                            color: white;
-                        }
-                        p{
-                            color: white;
-                        }
+                        text-align: center;
                     }
                 }
             }
             .item3{
                 grid-area: cc;
+                a{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .info-item3{
+                        text-align: center;
+                    }
+                }
             }
             .item4{
                 grid-area: dd;
+                a{
+                    position: relative;
+                    .info-item4{
+                        bottom: 20px;
+                        left: 0;
+                    }
+                }
             }
+            .info-item{
+                background: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                padding: 20px;
+                @include breakpoint(desktop){
+                    padding: 10px;
+                }
+            }
+            h3{
+                font-size: 25px;
+                color: white;
+                border-bottom: 3px solid white;
+                @include breakpoint(desktop){
+                    font-size: 16px;
+                }
+            }
+            p{
+                color: white;
+                margin-top: 10px;
+                font-size: 18px;
+                @include breakpoint(desktop){
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+//section2
+    .promotion-products{
+        padding: 50px 0;
+        @include breakpoint(desktop){
+            padding: 30px 0;
+        }
+        .heading{
+            display: flex;
+            align-items: center;
+            h3{
+                font-size: 30px;
+                padding: 0 10px;
+                @include breakpoint(desktop){
+                    font-size: 25px;
+                }
+            }
+            .crossbar{
+                height: 3px;
+                width: 40%;
+                background-color: black;
+                @include breakpoint(desktop){
+                    // width: 35%;
+                }
+            }
+            .crossbar-left{
+                // right: 0;   
+                // // position: absolute;
+                // // top: 50%;
+                // // transform: translateY(-50%);
+            }
+            .crossbar-right{
+                // left: 0;
+                // position: absolute;
+                // top: 50%;
+                // transform: translateY(-50%);
+            }
+        }
+        .description{
+            text-align: center;
+            margin-top: 10px;
         }
     }
 }
