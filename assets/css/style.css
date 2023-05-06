@@ -635,10 +635,10 @@ main .promotion-products {
 main .promotion-products .heading {
   display: flex;
   align-items: center;
+  width: 55%;
 }
 main .promotion-products .heading h3 {
   font-size: 30px;
-  padding: 0 10px;
 }
 @media (max-width: 1366px) {
   main .promotion-products .heading h3 {
@@ -647,10 +647,84 @@ main .promotion-products .heading h3 {
 }
 main .promotion-products .heading .crossbar {
   height: 3px;
-  width: 40%;
+  width: 30%;
   background-color: black;
 }
 main .promotion-products .description {
   text-align: center;
   margin-top: 10px;
+  font-weight: 500;
+}
+main .promotion-products .cards-carousel {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+}
+main .promotion-products .cards-carousel .card {
+  cursor: pointer;
+  width: 25%;
+  margin: 0 15px;
+}
+@media (max-width: 768px) {
+  main .promotion-products .cards-carousel .card {
+    width: 45%;
+    margin: 0 10px;
+  }
+}
+main .promotion-products .cards-carousel .card a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+main .promotion-products .cards-carousel .card a img {
+  width: 100%;
+}
+main .promotion-products .cards-carousel .card a > img {
+  opacity: 1;
+}
+main .promotion-products .cards-carousel .card a > img + img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+main .promotion-products .cards-carousel .card h4 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+@media (max-width: 1366px) {
+  main .promotion-products .cards-carousel .card h4 {
+    font-size: 16px;
+  }
+}
+main .promotion-products .cards-carousel .card .price {
+  display: flex;
+  margin-bottom: 15px;
+}
+main .promotion-products .cards-carousel .card .price h3 {
+  margin-left: 0;
+}
+@media (max-width: 1366px) {
+  main .promotion-products .cards-carousel .card .price h3 {
+    font-size: 14px;
+  }
+}
+main .promotion-products .cards-carousel .card .price h3 + h3 {
+  text-decoration: line-through;
+  margin-right: 0;
+}
+main .promotion-products .cards-carousel .card .vote i {
+  color: rgb(255, 184, 102);
+}
+main .promotion-products .cards-carousel .card:hover a > img {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+main .promotion-products .cards-carousel .card:hover a > img + img {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */
