@@ -1,0 +1,29 @@
+footer{
+    background: black;
+    padding: 50px 20px;
+    color: white;
+    h3{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .footer{
+        display: flex;
+        .col-2{
+            ul{
+                padding: 0;
+                li{
+                    list-style: none;
+                    padding-bottom: 10px;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

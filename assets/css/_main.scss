@@ -105,20 +105,32 @@ main{
         .heading{
             display: flex;
             align-items: center;
-            width: 55%;
+            justify-content: center;
+            // width: 55%;
             h3{
                 font-size: 30px;
+                margin: 0 10px;
+                text-align: center;
                 @include breakpoint(desktop){
                     font-size: 25px;
+                }
+                @include breakpoint(phone){
+                    font-size: 20px;
                 }
             }
             .crossbar{
                 height: 3px;
-                width: 30%;
+                min-width: 150px;
                 background-color: black;
-                @include breakpoint(desktop){
-                    // width: 35%;
+                @include breakpoint(tablet){
+                    min-width: 80px;
                 }
+            }
+            .crossbar-left{
+                margin-right: 0;
+            }
+            .crossbar-right{
+                margin-left: 0;
             }
         }
         .description{
@@ -128,18 +140,19 @@ main{
         }
         .cards-carousel{
             margin-top: 40px;
-            display: flex;
+            // display: flex;
+            position: relative;
             width: 100%;
             @include breakpoint(tablet){
                 // flex-direction: column;
             }
             .card{
                 cursor: pointer;
-                width: 25%;
-                margin: 0 15px;
+                // width: 25%;
+                margin: 0 20px;
+                position: relative;
                 @include breakpoint(tablet){
-                    width: 45%;
-                    margin: 0 10px;
+                    
                 }
                 a{
                     position: relative;
@@ -167,6 +180,7 @@ main{
                     @include breakpoint(desktop){
                         font-size: 16px;
                     }
+                    
                 }
                 .price{
                     display: flex;
@@ -185,7 +199,18 @@ main{
                 .vote{
                     i{
                         color: rgb(255, 184, 102);
+                        @include breakpoint(phone){
+                            
+                        }
                     }
+                }
+                .sale-off{
+                    background: #FF710A;
+                    color: white;
+                    position: absolute;
+                    top: 0;
+                    left: 10%;
+                    padding: 40px 8px;
                 }
             }
             .card:hover a>img{
@@ -198,5 +223,300 @@ main{
                 visibility: visible;
             }
         }
+        .owl-carousel{
+            .owl-nav{
+                display: block!important;
+                span{
+                    display: none;
+                }
+                .owl-prev{
+                    font-family: 'fontAwesome';                    
+                }
+                .owl-prev::before{
+                    content: "\f053";
+                    padding: 12px 15px;
+                    border: 1px solid black;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 35%;
+                    left: 35px;
+                }
+                .owl-next{
+                    font-family: 'fontAwesome';
+                }
+                .owl-next::after{
+                    content: "\f054";
+                    padding: 12px 15px;
+                    border: 1px solid black;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 35%;
+                    right: 35px;
+                }
+            }
+        }
+    }
+//section3
+    .feedback-area{
+        background-image: url(../images/he-thong-cua-hang.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 80vh;
+        padding: 50px 0;
+        display: flex;
+        align-items: center;
+        .feedback-slide{
+            cursor: pointer;
+            height: 100%;
+        }
+        .image-customer{
+            width: 125px;
+            min-height: 125px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 55px;
+        }
+        .image-customer-1{
+            background-image: url(../images/563949f5-8c9f-4a52-a211-98ff8a6a10ed.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .image-customer-2{
+            background-image: url(../images/4b685938-a49b-4bcc-85af-ace1dbc57153.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .image-customer-3{
+            background-image: url(../images/7bd24190-ab82-4da4-b43a-97f789bb2a9f.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .content-feedback{
+            color: white;
+            width: 50%;
+            text-align: center;
+            line-height: 1.6em;
+            font-style: italic;
+            margin-bottom: 70px;
+            @include breakpoint(phone){
+                font-size: 14px;
+            }
+        }
+        .info-customer{
+            color: white;
+            width: 50%;
+            text-align: center;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        hr{
+            width: 10%;
+            height: 3px;
+            background: white;
+        }
+        .owl-carousel{
+            .owl-nav{
+                display: block!important;
+                span{
+                    display: none;
+                }
+                .owl-prev{
+                    font-family: 'fontAwesome';                    
+                }
+                .owl-prev::before{
+                    content: "\f053";
+                    padding: 12px 15px;
+                    border: 1px solid white;
+                    color: white;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 35px;
+                    @include breakpoint(phone){
+                        left: 0;
+                    }
+                }
+                .owl-next{
+                    font-family: 'fontAwesome';
+                }
+                .owl-next::after{
+                    content: "\f054";
+                    padding: 12px 15px;
+                    border: 1px solid white;
+                    color: white;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 35px;
+                    @include breakpoint(phone){
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+//section4
+.new-products{
+    padding: 50px 0;
+    @include breakpoint(desktop){
+        padding: 30px 0;
+    }
+    .heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // width: 55%;
+        h3{
+            font-size: 30px;
+            margin: 0 10px;
+            text-align: center;
+            @include breakpoint(desktop){
+                font-size: 25px;
+            }
+            @include breakpoint(phone){
+                font-size: 20px;
+            }
+        }
+        .crossbar{
+            height: 3px;
+            min-width: 150px;
+            background-color: black;
+            @include breakpoint(tablet){
+                min-width: 80px;
+            }
+        }
+        .crossbar-left{
+            margin-right: 0;
+        }
+        .crossbar-right{
+            margin-left: 0;
+        }
+    }
+    .description{
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    .cards-carousel{
+        margin-top: 40px;
+        // display: flex;
+        position: relative;
+        width: 100%;
+        @include breakpoint(tablet){
+            // flex-direction: column;
+        }
+        .card{
+            cursor: pointer;
+            // width: 25%;
+            margin: 0 20px;
+            position: relative;
+            @include breakpoint(tablet){
+                
+            }
+            a{
+                position: relative;
+                display: block;
+                text-decoration: none;
+                color: black;
+                img{
+                    width: 100%;
+                }
+            }
+            a > img{
+                opacity: 1;
+            }
+            a > img + img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+            }
+            h4{
+                margin-top: 20px;
+                margin-bottom: 15px;
+                font-weight: 500;
+                @include breakpoint(desktop){
+                    font-size: 16px;
+                }
+                
+            }
+            .price{
+                display: flex;
+                margin-bottom: 15px;
+                h3{
+                    margin-left: 0;
+                    @include breakpoint(desktop){
+                        font-size: 14px;
+                    }
+                }
+                h3+h3{
+                    text-decoration: line-through;
+                    margin-right: 0;
+                }
+            }
+            .vote{
+                i{
+                    color: rgb(255, 184, 102);
+                    @include breakpoint(phone){
+                        
+                    }
+                }
+            }
+            .sale-off{
+                background: #FF710A;
+                color: white;
+                position: absolute;
+                top: 0;
+                left: 10%;
+                padding: 40px 8px;
+            }
+        }
+        .card:hover a>img{
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s;
+        }
+        .card:hover a>img+img{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .owl-carousel{
+        .owl-nav{
+            display: block!important;
+            span{
+                display: none;
+            }
+            .owl-prev{
+                font-family: 'fontAwesome';                    
+            }
+            .owl-prev::before{
+                content: "\f053";
+                padding: 12px 15px;
+                border: 1px solid black;
+                border-radius: 50%;
+                position: absolute;
+                top: 35%;
+                left: 35px;
+            }
+            .owl-next{
+                font-family: 'fontAwesome';
+            }
+            .owl-next::after{
+                content: "\f054";
+                padding: 12px 15px;
+                border: 1px solid black;
+                border-radius: 50%;
+                position: absolute;
+                top: 35%;
+                right: 35px;
+            }
+        }
     }
 }
+}
+
