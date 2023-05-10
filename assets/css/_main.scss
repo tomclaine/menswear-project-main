@@ -1,5 +1,6 @@
 main{
     width: 100%;
+//index page
 //section1
     .highlight-cate{
        padding: 50px 0;
@@ -544,167 +545,200 @@ main{
         }
     }
 //section4
-.new-products{
-    padding: 50px 0;
-    @include breakpoint(desktop){
-        padding: 30px 0;
-    }
-    .heading{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        // width: 55%;
-        h3{
-            font-size: 30px;
-            margin: 0 10px;
-            text-align: center;
-            @include breakpoint(desktop){
-                font-size: 25px;
-            }
-            @include breakpoint(phone){
-                font-size: 20px;
-            }
+    .new-products{
+        padding: 50px 0;
+        @include breakpoint(desktop){
+            padding: 30px 0;
         }
-        .crossbar{
-            height: 3px;
-            min-width: 150px;
-            background-color: black;
-            @include breakpoint(tablet){
-                min-width: 80px;
-            }
-        }
-        .crossbar-left{
-            margin-right: 0;
-        }
-        .crossbar-right{
-            margin-left: 0;
-        }
-    }
-    .description{
-        text-align: center;
-        margin-top: 10px;
-        font-weight: 500;
-    }
-    .cards-carousel{
-        margin-top: 40px;
-        // display: flex;
-        position: relative;
-        width: 100%;
-        @include breakpoint(tablet){
-            // flex-direction: column;
-        }
-        .card{
-            cursor: pointer;
-            // width: 25%;
-            margin: 0 20px;
-            position: relative;
-            @include breakpoint(tablet){
-                
-            }
-            a{
-                position: relative;
-                display: block;
-                text-decoration: none;
-                color: black;
-                img{
-                    width: 100%;
-                    transition: all 0.5s;
+        .heading{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // width: 55%;
+            h3{
+                font-size: 30px;
+                margin: 0 10px;
+                text-align: center;
+                @include breakpoint(desktop){
+                    font-size: 25px;
+                }
+                @include breakpoint(phone){
+                    font-size: 20px;
                 }
             }
-            a > img{
-                opacity: 1;
+            .crossbar{
+                height: 3px;
+                min-width: 150px;
+                background-color: black;
+                @include breakpoint(tablet){
+                    min-width: 80px;
+                }
             }
-            a > img + img{
-                position: absolute;
-                top: 0;
-                left: 0;
+            .crossbar-left{
+                margin-right: 0;
+            }
+            .crossbar-right{
+                margin-left: 0;
+            }
+        }
+        .description{
+            text-align: center;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+        .cards-carousel{
+            margin-top: 40px;
+            // display: flex;
+            position: relative;
+            width: 100%;
+            @include breakpoint(tablet){
+                // flex-direction: column;
+            }
+            .card{
+                cursor: pointer;
+                // width: 25%;
+                margin: 0 20px;
+                position: relative;
+                @include breakpoint(tablet){
+                    
+                }
+                a{
+                    position: relative;
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                    img{
+                        width: 100%;
+                        transition: all 0.5s;
+                    }
+                }
+                a > img{
+                    opacity: 1;
+                }
+                a > img + img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                h4{
+                    margin-top: 20px;
+                    margin-bottom: 15px;
+                    font-weight: 500;
+                    @include breakpoint(desktop){
+                        font-size: 16px;
+                    }
+                    
+                }
+                .price{
+                    display: flex;
+                    margin-bottom: 15px;
+                    h3{
+                        margin-left: 0;
+                        @include breakpoint(desktop){
+                            font-size: 14px;
+                        }
+                    }
+                    h3+h3{
+                        text-decoration: line-through;
+                        margin-right: 0;
+                    }
+                }
+                .vote{
+                    i{
+                        color: rgb(255, 184, 102);
+                        @include breakpoint(phone){
+                            
+                        }
+                    }
+                }
+                .sale-off{
+                    background: #FF710A;
+                    color: white;
+                    position: absolute;
+                    top: 0;
+                    left: 10%;
+                    padding: 40px 8px;
+                }
+            }
+            .card:hover a>img{
                 opacity: 0;
                 visibility: hidden;
+                transition: all 0.5s;
             }
-            h4{
-                margin-top: 20px;
-                margin-bottom: 15px;
-                font-weight: 500;
-                @include breakpoint(desktop){
-                    font-size: 16px;
+            .card:hover a>img+img{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .owl-carousel{
+            .owl-nav{
+                display: block!important;
+                span{
+                    display: none;
                 }
-                
+                .owl-prev{
+                    font-family: 'fontAwesome';                    
+                }
+                .owl-prev::before{
+                    content: "\f053";
+                    padding: 12px 15px;
+                    background: rgba(0,0,0,0.1);
+                    color: white;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 35%;
+                    left: 35px;
+                }
+                .owl-next{
+                    font-family: 'fontAwesome';
+                }
+                .owl-next::after{
+                    content: "\f054";
+                    padding: 12px 15px;
+                    background: rgba(0,0,0,0.1);
+                    color: white;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 35%;
+                    right: 35px;
+                }
             }
-            .price{
-                display: flex;
-                margin-bottom: 15px;
+        }
+    }
+
+//collection page
+    .section-1{
+        padding: 50px 0;
+        .lookHot{      
+            display: flex;
+            width: 100%;
+            .lookHot_head{
+                width: 23%;
+                background: #f4f4f4;
+                padding: 4em;
                 h3{
-                    margin-left: 0;
-                    @include breakpoint(desktop){
-                        font-size: 14px;
+                    margin-bottom: 30px;
+                    font-size: 24px;
+                }
+                p{
+                    margin-bottom: 30px;
+                }
+            }
+            .lookHot_carousel{
+                width: 77%;
+                display: flex;
+                height: 100%;
+                a{
+                    img{
+                        width: 100%;
                     }
                 }
-                h3+h3{
-                    text-decoration: line-through;
-                    margin-right: 0;
-                }
-            }
-            .vote{
-                i{
-                    color: rgb(255, 184, 102);
-                    @include breakpoint(phone){
-                        
-                    }
-                }
-            }
-            .sale-off{
-                background: #FF710A;
-                color: white;
-                position: absolute;
-                top: 0;
-                left: 10%;
-                padding: 40px 8px;
-            }
-        }
-        .card:hover a>img{
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.5s;
-        }
-        .card:hover a>img+img{
-            opacity: 1;
-            visibility: visible;
-        }
-    }
-    .owl-carousel{
-        .owl-nav{
-            display: block!important;
-            span{
-                display: none;
-            }
-            .owl-prev{
-                font-family: 'fontAwesome';                    
-            }
-            .owl-prev::before{
-                content: "\f053";
-                padding: 12px 15px;
-                background: rgba(0,0,0,0.1);
-                color: white;
-                border-radius: 50%;
-                position: absolute;
-                top: 35%;
-                left: 35px;
-            }
-            .owl-next{
-                font-family: 'fontAwesome';
-            }
-            .owl-next::after{
-                content: "\f054";
-                padding: 12px 15px;
-                background: rgba(0,0,0,0.1);
-                color: white;
-                border-radius: 50%;
-                position: absolute;
-                top: 35%;
-                right: 35px;
             }
         }
     }
-}
+    
+
 }
 
