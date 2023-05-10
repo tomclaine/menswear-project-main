@@ -2,98 +2,279 @@ main{
     width: 100%;
 //section1
     .highlight-cate{
-        padding: 50px 0;
-        width: 55%;
-        @include breakpoint(tablet){
-            width: 90%;
-            padding: 30px 0;
+       padding: 50px 0;
+       @include breakpoint(tablet){
+        padding: 30px 0;
         }
-        .grid{
-            display: grid;
-            grid-gap: 25px;
-            grid-template-areas: 
-            "aa bb dd"
-            "aa cc dd";
-            @include breakpoint(desktop){
-                grid-template-areas: 
-                "aa dd"
-                "bb cc"
-                ;
-                grid-gap: 10px;
+       .category-area{
+            display: flex;
+            min-height: 70vh;
+            width: 98%;
+            gap: 5px;
+            @include breakpoint(tablet){
+                flex-wrap: wrap;
             }
-            img{
-                width: 100%;
-                height: 100%;
-            }
-            .item1{
-                grid-area: aa;
-                a{
-                    position: relative;
-                    .info-item1{
-                        bottom: 20px;
-                        right: 0;
-                    }
-                }
-            }
-            .item2{
-                grid-area: bb;
-                a{
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    .info-item2{
-                        text-align: center;
-                    }
-                }
-            }
-            .item3{
-                grid-area: cc;
-                a{
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    .info-item3{
-                        text-align: center;
-                    }
-                }
-            }
-            .item4{
-                grid-area: dd;
-                a{
-                    position: relative;
-                    .info-item4{
-                        bottom: 20px;
-                        left: 0;
-                    }
-                }
-            }
-            .info-item{
-                background: rgba(0, 0, 0, 0.5);
+            .name-cate{
                 position: absolute;
-                padding: 20px;
-                @include breakpoint(desktop){
-                    padding: 10px;
+                h3{
+                    color: white;
+                    padding-bottom: 5px;
+                    font-size: 28px;
+                    text-align: center;
+                    @include breakpoint(desktop){
+                        font-size: 20px;
+                    }
+                    @include breakpoint(tablet){
+                        font-size: 14px;
+                    }
+                }
+                hr{
+                    height: 3px;
+                    background-color: white;
+                    width: 100%;
+                    margin-left: 0;
+                    border: none;
+                    @include breakpoint(tablet){
+                        width: 50%;
+                        margin: auto;
+                    }
+                }
+                p{
+                    color: white;
+                    padding-top: 5px;
+                    @include breakpoint(tablet){
+                        font-size: 10px;
+                    }
                 }
             }
-            h3{
-                font-size: 20px;
-                color: white;
-                border-bottom: 3px solid white;
-                @include breakpoint(desktop){
-                    font-size: 16px;
+            .left{
+                width: 25%;
+                overflow: hidden;
+                margin-right: 0;
+                cursor: pointer;
+                position: relative;
+                .img-left{
+                    background-image: url(../images/Ao-blazer-Aristino-danh-m-c-n-i-b-t-1x500x500x4.webp);
+                    background-size: cover;
+                    background-position: center;
+                    transition: all 0.5s; 
+                    height: 100%;
+                }
+                .img-left::before{
+                    content: "";
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(52, 73, 94, 0.589);
+                }  
+                .name-cate{
+                    right: 10%;
+                    bottom: 10%;
+                }
+                @include breakpoint(tablet){
+                    width: 50%;
                 }
             }
-            p{
-                color: white;
-                margin-top: 10px;
-                font-size: 16px;
-                @include breakpoint(desktop){
-                    font-size: 12px;
+            .left:hover .img-left,
+            .left:focus .img-left{
+                transform: scale(1.1);
+            }    
+            .center-1{
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                @include breakpoint(tablet){
+                    width: 45%;
+                    order: 1;
+                }
+                .top{
+                    width: 100%;
+                    height: 100%; 
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    .img-top{
+                        width: 100%;
+                        background-image: url(../images/Ao-polo-Aristino-danh-m-c-n-i-b-t-2x500x500x4.webp);
+                        background-size: cover;
+                        background-position: center;
+                        height: 100%; 
+                        transition: all 0.5s;
+                    }
+                    .img-top::before{
+                        content: "";
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(52, 73, 94, 0.589);
+                    }
+                    .name-cate{
+                        text-align: center;
+                        right: 50%;
+                        bottom: 50%;
+                        transform: translate(50%,50%);
+                    }
+                }
+                .top:hover .img-top,
+                .top:focus .img-top
+                {
+                    transform: scale(1.1);
+                }
+                .bottom{
+                    width: 100%;
+                    height: 100%; 
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    .img-bottom{
+                        width: 100%;
+                        background-image: url(../images/Ao-so-mi-Aristino-danh-m-c-n-i-b-t-3x500x500x4.webp);
+                        background-size: cover;
+                        background-position: center;
+                        height: 100%; 
+                        transition: all 0.5s;
+                    }
+                    .img-bottom::before{
+                        content: "";
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(52, 73, 94, 0.589);
+                    }
+                    .name-cate{
+                        text-align: center;
+                        right: 50%;
+                        bottom: 50%;
+                        transform: translate(50%,50%);
+                    }
+                }
+                .bottom:hover .img-bottom,
+                .bottom:focus .img-bottom
+                {
+                    transform: scale(1.1);
                 }
             }
-        }
+            .center-2{
+                width: 25%;
+                gap: 5px;
+                display: flex;
+                flex-direction: column;
+                @include breakpoint(tablet){
+                    width: 45%;
+                }
+                .top{
+                    width: 100%;
+                    height: 100%; 
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    .img-top{
+                        width: 100%;
+                        background-image: url(../images/Danh-m-c-n-i-b-t-2-Shortx500x500x4.webp);
+                        background-size: cover;
+                        background-position: center;
+                        height: 100%; 
+                        transition: all 0.5s;
+                    }
+                    .img-top::before{
+                        content: "";
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(52, 73, 94, 0.589);
+                    }
+                    .name-cate{
+                        text-align: center;
+                        right: 50%;
+                        bottom: 50%;
+                        transform: translate(50%,50%);
+                    }
+                }
+                .top:hover .img-top,
+                .top:focus .img-top
+                {
+                    transform: scale(1.1);
+                }
+                .bottom{
+                    width: 100%;
+                    height: 100%; 
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    .img-bottom{
+                        width: 100%;
+                        background-image: url(../images/quan-jean-nam-aristino-AJN02401-06x500x500x4.webp);
+                        background-size: cover;
+                        background-position: center;
+                        height: 100%; 
+                        transition: all 0.5s;
+                    }
+                    .img-bottom::before{
+                        content: "";
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(52, 73, 94, 0.589);
+                    }
+                    .name-cate{
+                        text-align: center;
+                        right: 50%;
+                        bottom: 50%;
+                        transform: translate(50%,50%);
+                    }
+                }
+                .bottom:hover .img-bottom,
+                .bottom:focus .img-bottom
+                {
+                    transform: scale(1.1);
+                }
+            }
+            .right{
+                width: 25%;
+                overflow: hidden;
+                margin-right: 0;
+                cursor: pointer;
+                position: relative;
+                .img-right{
+                    background-image: url(../images/Quan-au-nam-Aristino-2022x500x500x4.webp);
+                    background-size: cover;
+                    background-position: center;
+                    transition: all 0.5s; 
+                    height: 100%;
+                }
+                .img-right::before{
+                    content: "";
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(52, 73, 94, 0.589);
+                }
+                @include breakpoint(tablet){
+                    width: 50%;
+                }
+                .name-cate{
+                    left: 10%;
+                    bottom: 10%;
+                }
+            }
+            .right:hover .img-right,
+            .right:focus .img-right{
+                transform: scale(1.1);
+            }
+       }
     }
 
 //section2
@@ -161,6 +342,7 @@ main{
                     color: black;
                     img{
                         width: 100%;
+                        transition: all 0.5s;
                     }
                 }
                 a > img{
@@ -426,6 +608,7 @@ main{
                 color: black;
                 img{
                     width: 100%;
+                    transition: all 0.5s;
                 }
             }
             a > img{
