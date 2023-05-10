@@ -78,7 +78,7 @@ main{
                 }
             }
             h3{
-                font-size: 25px;
+                font-size: 20px;
                 color: white;
                 border-bottom: 3px solid white;
                 @include breakpoint(desktop){
@@ -88,7 +88,7 @@ main{
             p{
                 color: white;
                 margin-top: 10px;
-                font-size: 18px;
+                font-size: 16px;
                 @include breakpoint(desktop){
                     font-size: 12px;
                 }
@@ -235,7 +235,8 @@ main{
                 .owl-prev::before{
                     content: "\f053";
                     padding: 12px 15px;
-                    border: 1px solid black;
+                    background: rgba(0,0,0,0.1);
+                    color: white;
                     border-radius: 50%;
                     position: absolute;
                     top: 35%;
@@ -247,7 +248,9 @@ main{
                 .owl-next::after{
                     content: "\f054";
                     padding: 12px 15px;
-                    border: 1px solid black;
+                    background: rgba(0,0,0,0.1);
+                    color: white;
+                    color: white;
                     border-radius: 50%;
                     position: absolute;
                     top: 35%;
@@ -497,7 +500,8 @@ main{
             .owl-prev::before{
                 content: "\f053";
                 padding: 12px 15px;
-                border: 1px solid black;
+                background: rgba(0,0,0,0.1);
+                color: white;
                 border-radius: 50%;
                 position: absolute;
                 top: 35%;
@@ -509,7 +513,8 @@ main{
             .owl-next::after{
                 content: "\f054";
                 padding: 12px 15px;
-                border: 1px solid black;
+                background: rgba(0,0,0,0.1);
+                color: white;
                 border-radius: 50%;
                 position: absolute;
                 top: 35%;

@@ -85,3 +85,19 @@ dropMenuMobile.addEventListener("click",(e)=>{
     }
     e.preventDefault();
 });
+
+//back top
+let backTop = document.querySelector(".back-top");
+console.log(backTop);
+window.onscroll = function(){
+    if(window.pageYOffset > 200){
+        backTop.style.display = "block";
+    }
+    else{
+        backTop.style.display = "none";
+    }
+};
+backTop.addEventListener("click",()=>{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});

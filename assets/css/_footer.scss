@@ -1,17 +1,81 @@
 footer{
     background: black;
-    padding: 50px 20px;
+    padding: 80px 20px;
     color: white;
+    @include breakpoint(tablet){
+        padding: 30px 20px;
+    }
     h3{
         font-size: 18px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     p{
         font-size: 16px;
     }
     .footer{
         display: flex;
+        flex-wrap: wrap;
+        .col-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30%;
+            @include breakpoint(tablet){
+                width: 100%;
+                flex-direction: column-reverse;
+                margin-bottom: 20px;
+            }
+            .contact{
+                margin: 0;
+                @include breakpoint(tablet){
+                    text-align: center;
+                }
+                @include breakpoint(phone){
+                    text-align: left;
+                }
+                p{
+                    margin-bottom: 10px;
+                    a{
+                        text-decoration: none;
+                        color: rgba(255, 255, 255, 0.507);
+                        transition: all 0.3s;
+                    }
+                    a:hover{
+                        color: rgb(255, 184, 102);
+                    }
+                }
+            }
+            .footer_main-logo{
+                margin: 0;
+                a{
+                    font-size: 45px;
+                    letter-spacing: 10px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: white;
+                    @include breakpoint(desktop){
+                        font-size: 30px;
+                        
+                        margin-bottom: 30px;
+                    }
+                    @include breakpoint(tablet){
+                        font-size: 30px;
+                        display: block;
+                        text-align: center;
+                    }
+                }
+            }
+        }
         .col-2{
+            width: 30%;
+            @include breakpoint(tablet){
+                width: 100%;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            @include breakpoint(phone){
+                text-align: left;
+            }
             ul{
                 padding: 0;
                 li{
@@ -20,8 +84,73 @@ footer{
                     a{
                         text-decoration: none;
                         color: white;
-                        
+                        transition: all 0.3s;
                     }
+                    a:hover{
+                        color: rgb(255, 184, 102);
+                    }
+                }
+            }
+        }
+        .col-3{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30%;
+            @include breakpoint(tablet){
+                width: 100%;
+                text-align: center;
+            }
+            @include breakpoint(phone){
+                text-align: left;
+            }
+            .form-mail{
+                margin: 0 0 25px 0;
+                input{
+                    padding: 12px 20px 12px 10px;
+                    outline: none;
+                    border: none;
+                    font-size: 14px;
+                }
+                button{
+                    padding: 12px 20px;
+                    border: none;
+                    background: rgba(97, 97, 97, 0.603);
+                    color: white;
+                }
+            }
+            .connect{
+                margin: 0 0 25px 0;
+                ul{
+                    padding: 0;
+                    display: flex;
+                    @include breakpoint(tablet){
+                        justify-content: center;
+                    }
+                    @include breakpoint(phone){
+                        justify-content: flex-start;
+                    }
+                    li{
+                        list-style: none;
+                        margin: 0 10px 0 0;
+                        a{
+                            transition: all 0.3s;
+                            text-decoration: none;
+                            color: white;
+                            i{
+                                font-size: 18px;
+                            }
+                        }
+                        a:hover{
+                            color: rgb(255, 184, 102);
+                        }
+                    }
+                }
+            }
+            .payment-methods{
+                margin: 0;
+                img{
+                    width: 100%;
                 }
             }
         }

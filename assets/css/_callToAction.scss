@@ -1,0 +1,19 @@
+.call-to-action-btns{
+    z-index: 100;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    .back-top{
+        display: none;
+        margin-bottom: 5px;
+        padding: 16px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.253);
+        border: 1px solid white;
+        cursor: pointer;
+        color: white;
+    }
+    .messenger{
+        margin-bottom: 5px;
+    } 
+}
