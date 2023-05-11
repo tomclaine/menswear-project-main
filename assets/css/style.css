@@ -530,6 +530,10 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/assets/images/bst-tai-sinh-05-min.jpg);
 }
 
+.banner-product {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/assets/images/bia-1920-600-Thi-247-copyx0x0x2.webp);
+}
+
 main {
   width: 100%;
 }
@@ -1598,6 +1602,112 @@ main .map {
 main .map iframe {
   width: 100%;
   height: 70vh;
+}
+main .section-1 {
+  padding: 50px 0;
+}
+@media (max-width: 768px) {
+  main .section-1 {
+    padding: 30px 0;
+  }
+}
+main .section-1 .heading-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+main .section-1 .heading-group .heading {
+  margin-left: 0;
+}
+main .section-1 .heading-group .heading h3 {
+  font-size: 24px;
+}
+main .section-1 .heading-group .filter-sort {
+  display: flex;
+  margin-right: 0;
+}
+main .section-1 .heading-group .filter-sort .sort {
+  margin-left: 10px;
+}
+main .section-1 .list-product {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+main .section-1 .list-product .card {
+  cursor: pointer;
+  width: 33.3333333333%;
+  gap: 15px;
+  position: relative;
+}
+main .section-1 .list-product .card a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+main .section-1 .list-product .card a img {
+  width: 100%;
+  transition: all 0.5s;
+}
+main .section-1 .list-product .card a > img {
+  opacity: 1;
+}
+main .section-1 .list-product .card a > img + img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+main .section-1 .list-product .card h4 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+@media (max-width: 1366px) {
+  main .section-1 .list-product .card h4 {
+    font-size: 16px;
+  }
+}
+main .section-1 .list-product .card .price {
+  display: flex;
+  margin-bottom: 15px;
+}
+main .section-1 .list-product .card .price h3 {
+  margin-left: 0;
+}
+@media (max-width: 1366px) {
+  main .section-1 .list-product .card .price h3 {
+    font-size: 14px;
+  }
+}
+main .section-1 .list-product .card .price h3 + h3 {
+  text-decoration: line-through;
+  margin-right: 0;
+}
+main .section-1 .list-product .card .vote i {
+  color: rgb(255, 184, 102);
+}
+main .section-1 .list-product .card .sale-off {
+  background: #FF710A;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  padding: 40px 8px;
+}
+main .section-1 .list-product .card:hover a > img {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+main .section-1 .list-product .card:hover a > img + img {
+  opacity: 1;
+  visibility: visible;
 }
 
 footer {

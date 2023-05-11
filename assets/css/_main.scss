@@ -1051,5 +1051,121 @@ main{
             height: 70vh;
         }
     }
+//product page
+    .section-1{
+        padding: 50px 0;
+        @include breakpoint(tablet){
+            padding: 30px 0;
+        }
+        .heading-group{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            .heading{
+                margin-left: 0;
+                h3{
+                    font-size: 24px;
+                }
+            }
+            .filter-sort{
+                display: flex;
+                margin-right: 0;
+                .filter{
+
+                }
+                .sort{
+                    margin-left: 10px;
+                }
+            }
+        }
+        .list-product{
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            width: 100%;
+            @include breakpoint(tablet){
+                // flex-direction: column;
+            }
+            .card{
+                cursor: pointer;
+                width: calc(100%/3);
+                gap: 15px;
+                position: relative;
+                @include breakpoint(tablet){
+                    
+                }
+                a{
+                    position: relative;
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                    img{
+                        width: 100%;
+                        transition: all 0.5s;
+                    }
+                }
+                a > img{
+                    opacity: 1;
+                }
+                a > img + img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                h4{
+                    margin-top: 20px;
+                    margin-bottom: 15px;
+                    font-weight: 500;
+                    @include breakpoint(desktop){
+                        font-size: 16px;
+                    }
+                    
+                }
+                .price{
+                    display: flex;
+                    margin-bottom: 15px;
+                    h3{
+                        margin-left: 0;
+                        @include breakpoint(desktop){
+                            font-size: 14px;
+                        }
+                    }
+                    h3+h3{
+                        text-decoration: line-through;
+                        margin-right: 0;
+                    }
+                }
+                .vote{
+                    i{
+                        color: rgb(255, 184, 102);
+                        @include breakpoint(phone){
+                            
+                        }
+                    }
+                }
+                .sale-off{
+                    background: #FF710A;
+                    color: white;
+                    position: absolute;
+                    top: 0;
+                    left: 10%;
+                    padding: 40px 8px;
+                }
+            }
+            .card:hover a>img{
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.5s;
+            }
+            .card:hover a>img+img{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
 }
 
