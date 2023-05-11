@@ -1,5 +1,6 @@
 main{
     width: 100%;
+//carousel all
 //index page
 //section1
     .highlight-cate{
@@ -448,6 +449,7 @@ main{
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         min-height: 80vh;
         padding: 50px 0;
         display: flex;
@@ -709,36 +711,319 @@ main{
     }
 
 //collection page
+//section1
     .section-1{
         padding: 50px 0;
+        @include breakpoint(tablet){
+            padding: 30px 0;
+        }
         .lookHot{      
             display: flex;
-            width: 100%;
             .lookHot_head{
                 width: 23%;
                 background: #f4f4f4;
                 padding: 4em;
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                justify-content: center;
+                @include breakpoint(desktop){
+                    width: 30%;
+                    padding: 2em;
+                }
+                @include breakpoint(tablet){
+                    padding: 1em;
+                    width: 50%;
+                }
                 h3{
                     margin-bottom: 30px;
                     font-size: 24px;
+                    margin-left: 0;
+                    @include breakpoint(desktop){
+                        font-size: 18px;
+                        margin-bottom: 15px;
+                    }
+                    @include breakpoint(tablet){
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                    }
                 }
                 p{
                     margin-bottom: 30px;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    @include breakpoint(tablet){
+                        font-size: 14px;
+                    }
+                }
+                a{
+                    margin-left: 0;
+                    color: black;
+                    display: block;
+                    @include breakpoint(tablet){
+                        font-size: 14px;
+                    }
                 }
             }
             .lookHot_carousel{
                 width: 77%;
                 display: flex;
                 height: 100%;
+                @include breakpoint(desktop){
+                    width: 70%;
+                }
+                @include breakpoint(tablet){
+                    width: 50%;
+                }
                 a{
                     img{
                         width: 100%;
                     }
                 }
             }
+            .owl-carousel{
+                .owl-nav{
+                    display: block!important;
+                    
+                    span{
+                        display: none;
+                    }
+                    .owl-prev{
+                        font-family: 'fontAwesome';                    
+                    }
+                    .owl-prev::before{
+                        content: "\f053";
+                        padding: 12px 15px;
+                        border: 1px solid white;
+                        color: white;
+                        transform: translateY(-50%);
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 50%;
+                        left: 35px;
+                        @include breakpoint(tablet){
+                            left: 5px;
+                        }
+                        @include breakpoint(phone){
+                            display: none;
+                        }
+
+                    }
+                    .owl-next{
+                        font-family: 'fontAwesome';
+                    }
+                    .owl-next::after{
+                        content: "\f054";
+                        padding: 12px 15px;
+                        border: 1px solid white;
+                        color: white;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 35px;
+                        @include breakpoint(tablet){
+                            right: 5px;
+                        }
+                        @include breakpoint(phone){
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
     }
-    
-
+//section2
+    .section-2{
+        padding: 50px 0;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        gap: 2px;
+        @include breakpoint(tablet){
+            padding: 30px 0;
+            height: 70vh;
+        }
+        .img-left{
+            width: 50%;
+            background-image: url(../images/bst-tai-sinh-01x0x0x2.webp);
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+        }
+        .img-right{
+            width: 50%;
+            background-image: url(../images/bst-tai-sinh-02x0x0x2.webp);
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+        }
+    }
+//section3
+    .section-3{
+        padding: 50px 0;
+        @include breakpoint(tablet){
+            padding: 30px 0;
+        }
+        .cards-carousel{
+            margin-top: 40px;
+            // display: flex;
+            position: relative;
+            width: 100%;
+            @include breakpoint(tablet){
+                // flex-direction: column;
+            }
+            .card{
+                cursor: pointer;
+                // width: 25%;
+                margin: 0 20px;
+                position: relative;
+                @include breakpoint(tablet){
+                    
+                }
+                a{
+                    position: relative;
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                    img{
+                        width: 100%;
+                        transition: all 0.5s;
+                    }
+                }
+                a > img{
+                    opacity: 1;
+                }
+                a > img + img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                h4{
+                    margin-top: 20px;
+                    margin-bottom: 15px;
+                    font-weight: 500;
+                    @include breakpoint(desktop){
+                        font-size: 16px;
+                    }
+                    
+                }
+                .price{
+                    display: flex;
+                    margin-bottom: 15px;
+                    h3{
+                        margin-left: 0;
+                        @include breakpoint(desktop){
+                            font-size: 14px;
+                        }
+                    }
+                    h3+h3{
+                        text-decoration: line-through;
+                        margin-right: 0;
+                    }
+                }
+                .vote{
+                    i{
+                        color: rgb(255, 184, 102);
+                        @include breakpoint(phone){
+                            
+                        }
+                    }
+                }
+                .sale-off{
+                    background: #FF710A;
+                    color: white;
+                    position: absolute;
+                    top: 0;
+                    left: 10%;
+                    padding: 40px 8px;
+                }
+            }
+            .card:hover a>img{
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.5s;
+            }
+            .card:hover a>img+img{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .owl-carousel{
+            .owl-nav{
+                display: block!important;
+                span{
+                    display: none;
+                }
+                .owl-prev{
+                    font-family: 'fontAwesome';                    
+                }
+                .owl-prev::before{
+                    content: "\f053";
+                    padding: 12px 15px;
+                    background: rgba(0,0,0,0.1);
+                    color: white;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 35%;
+                    left: 35px;
+                }
+                .owl-next{
+                    font-family: 'fontAwesome';
+                }
+                .owl-next::after{
+                    content: "\f054";
+                    padding: 12px 15px;
+                    background: rgba(0,0,0,0.1);
+                    color: white;
+                    color: white;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 35%;
+                    right: 35px;
+                }
+            }
+        }
+    }
+//section4
+    .section-4{
+        padding: 50px 0;
+        @include breakpoint(tablet){
+            padding: 30px 0;
+        }
+        .img-content{
+            background-image: url(../images/bst-tai-sinh-min.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 70vh;
+            margin-bottom: 30px;
+            @include breakpoint(tablet){
+                height: 50vh;
+            }
+        }
+        .content{
+            width: 90%;
+            text-align: center;
+            h3{
+                margin-bottom: 30px;
+                font-size: 24px;
+                @include breakpoint(tablet){
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
+            }
+            p{
+                @include breakpoint(tablet){
+                    font-size: 14px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
 }
 

@@ -43,6 +43,7 @@
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(/assets/images/quan-ao-thoi-trang-nam-routine-min.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     position: relative;
     @include breakpoint(tablet){
         height: 80vh;

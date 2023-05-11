@@ -70,6 +70,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/assets/images/quan-ao-thoi-trang-nam-routine-min.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   position: relative;
 }
 @media (max-width: 768px) {
@@ -986,6 +987,7 @@ main .feedback-area {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 80vh;
   padding: 50px 0;
   display: flex;
@@ -1246,29 +1248,330 @@ main .new-products .owl-carousel .owl-nav .owl-next::after {
 main .section-1 {
   padding: 50px 0;
 }
+@media (max-width: 768px) {
+  main .section-1 {
+    padding: 30px 0;
+  }
+}
 main .section-1 .lookHot {
   display: flex;
-  width: 100%;
 }
 main .section-1 .lookHot .lookHot_head {
   width: 23%;
   background: #f4f4f4;
   padding: 4em;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+@media (max-width: 1366px) {
+  main .section-1 .lookHot .lookHot_head {
+    width: 30%;
+    padding: 2em;
+  }
+}
+@media (max-width: 768px) {
+  main .section-1 .lookHot .lookHot_head {
+    padding: 1em;
+    width: 50%;
+  }
 }
 main .section-1 .lookHot .lookHot_head h3 {
   margin-bottom: 30px;
   font-size: 24px;
+  margin-left: 0;
+}
+@media (max-width: 1366px) {
+  main .section-1 .lookHot .lookHot_head h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  main .section-1 .lookHot .lookHot_head h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 }
 main .section-1 .lookHot .lookHot_head p {
   margin-bottom: 30px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  main .section-1 .lookHot .lookHot_head p {
+    font-size: 14px;
+  }
+}
+main .section-1 .lookHot .lookHot_head a {
+  margin-left: 0;
+  color: black;
+  display: block;
+}
+@media (max-width: 768px) {
+  main .section-1 .lookHot .lookHot_head a {
+    font-size: 14px;
+  }
 }
 main .section-1 .lookHot .lookHot_carousel {
   width: 77%;
   display: flex;
   height: 100%;
 }
+@media (max-width: 1366px) {
+  main .section-1 .lookHot .lookHot_carousel {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  main .section-1 .lookHot .lookHot_carousel {
+    width: 50%;
+  }
+}
 main .section-1 .lookHot .lookHot_carousel a img {
   width: 100%;
+}
+main .section-1 .lookHot .owl-carousel .owl-nav {
+  display: block !important;
+}
+main .section-1 .lookHot .owl-carousel .owl-nav span {
+  display: none;
+}
+main .section-1 .lookHot .owl-carousel .owl-nav .owl-prev {
+  font-family: "fontAwesome";
+}
+main .section-1 .lookHot .owl-carousel .owl-nav .owl-prev::before {
+  content: "\f053";
+  padding: 12px 15px;
+  border: 1px solid white;
+  color: white;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 35px;
+}
+@media (max-width: 768px) {
+  main .section-1 .lookHot .owl-carousel .owl-nav .owl-prev::before {
+    left: 5px;
+  }
+}
+@media (max-width: 420px) {
+  main .section-1 .lookHot .owl-carousel .owl-nav .owl-prev::before {
+    display: none;
+  }
+}
+main .section-1 .lookHot .owl-carousel .owl-nav .owl-next {
+  font-family: "fontAwesome";
+}
+main .section-1 .lookHot .owl-carousel .owl-nav .owl-next::after {
+  content: "\f054";
+  padding: 12px 15px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 35px;
+}
+@media (max-width: 768px) {
+  main .section-1 .lookHot .owl-carousel .owl-nav .owl-next::after {
+    right: 5px;
+  }
+}
+@media (max-width: 420px) {
+  main .section-1 .lookHot .owl-carousel .owl-nav .owl-next::after {
+    display: none;
+  }
+}
+main .section-2 {
+  padding: 50px 0;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  gap: 2px;
+}
+@media (max-width: 768px) {
+  main .section-2 {
+    padding: 30px 0;
+    height: 70vh;
+  }
+}
+main .section-2 .img-left {
+  width: 50%;
+  background-image: url(../images/bst-tai-sinh-01x0x0x2.webp);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+main .section-2 .img-right {
+  width: 50%;
+  background-image: url(../images/bst-tai-sinh-02x0x0x2.webp);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+main .section-3 {
+  padding: 50px 0;
+}
+@media (max-width: 768px) {
+  main .section-3 {
+    padding: 30px 0;
+  }
+}
+main .section-3 .cards-carousel {
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+}
+main .section-3 .cards-carousel .card {
+  cursor: pointer;
+  margin: 0 20px;
+  position: relative;
+}
+main .section-3 .cards-carousel .card a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+main .section-3 .cards-carousel .card a img {
+  width: 100%;
+  transition: all 0.5s;
+}
+main .section-3 .cards-carousel .card a > img {
+  opacity: 1;
+}
+main .section-3 .cards-carousel .card a > img + img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+main .section-3 .cards-carousel .card h4 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+@media (max-width: 1366px) {
+  main .section-3 .cards-carousel .card h4 {
+    font-size: 16px;
+  }
+}
+main .section-3 .cards-carousel .card .price {
+  display: flex;
+  margin-bottom: 15px;
+}
+main .section-3 .cards-carousel .card .price h3 {
+  margin-left: 0;
+}
+@media (max-width: 1366px) {
+  main .section-3 .cards-carousel .card .price h3 {
+    font-size: 14px;
+  }
+}
+main .section-3 .cards-carousel .card .price h3 + h3 {
+  text-decoration: line-through;
+  margin-right: 0;
+}
+main .section-3 .cards-carousel .card .vote i {
+  color: rgb(255, 184, 102);
+}
+main .section-3 .cards-carousel .card .sale-off {
+  background: #FF710A;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  padding: 40px 8px;
+}
+main .section-3 .cards-carousel .card:hover a > img {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+main .section-3 .cards-carousel .card:hover a > img + img {
+  opacity: 1;
+  visibility: visible;
+}
+main .section-3 .owl-carousel .owl-nav {
+  display: block !important;
+}
+main .section-3 .owl-carousel .owl-nav span {
+  display: none;
+}
+main .section-3 .owl-carousel .owl-nav .owl-prev {
+  font-family: "fontAwesome";
+}
+main .section-3 .owl-carousel .owl-nav .owl-prev::before {
+  content: "\f053";
+  padding: 12px 15px;
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  left: 35px;
+}
+main .section-3 .owl-carousel .owl-nav .owl-next {
+  font-family: "fontAwesome";
+}
+main .section-3 .owl-carousel .owl-nav .owl-next::after {
+  content: "\f054";
+  padding: 12px 15px;
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  right: 35px;
+}
+main .section-4 {
+  padding: 50px 0;
+}
+@media (max-width: 768px) {
+  main .section-4 {
+    padding: 30px 0;
+  }
+}
+main .section-4 .img-content {
+  background-image: url(../images/bst-tai-sinh-min.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  main .section-4 .img-content {
+    height: 50vh;
+  }
+}
+main .section-4 .content {
+  width: 90%;
+  text-align: center;
+}
+main .section-4 .content h3 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+@media (max-width: 768px) {
+  main .section-4 .content h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  main .section-4 .content p {
+    font-size: 14px;
+    text-align: justify;
+  }
 }
 
 footer {
