@@ -917,6 +917,11 @@ main .promotion-products .cards-carousel .card h4 {
     font-size: 16px;
   }
 }
+@media (max-width: 420px) {
+  main .promotion-products .cards-carousel .card h4 {
+    font-size: 14px;
+  }
+}
 main .promotion-products .cards-carousel .card .price {
   display: flex;
   margin-bottom: 15px;
@@ -927,6 +932,11 @@ main .promotion-products .cards-carousel .card .price h3 {
 @media (max-width: 1366px) {
   main .promotion-products .cards-carousel .card .price h3 {
     font-size: 14px;
+  }
+}
+@media (max-width: 420px) {
+  main .promotion-products .cards-carousel .card .price h3 {
+    font-size: 12px;
   }
 }
 main .promotion-products .cards-carousel .card .price h3 + h3 {
@@ -1635,13 +1645,24 @@ main .section-1 .list-product {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  justify-content: space-between;
   width: 100%;
 }
 main .section-1 .list-product .card {
   cursor: pointer;
-  width: 33.3333333333%;
-  gap: 15px;
+  width: 22%;
+  margin: 0 0 45px 0;
   position: relative;
+}
+@media (max-width: 1366px) {
+  main .section-1 .list-product .card {
+    width: 45%;
+  }
+}
+@media (max-width: 420px) {
+  main .section-1 .list-product .card {
+    margin-bottom: 20px;
+  }
 }
 main .section-1 .list-product .card a {
   position: relative;
@@ -1673,6 +1694,11 @@ main .section-1 .list-product .card h4 {
     font-size: 16px;
   }
 }
+@media (max-width: 420px) {
+  main .section-1 .list-product .card h4 {
+    font-size: 14px;
+  }
+}
 main .section-1 .list-product .card .price {
   display: flex;
   margin-bottom: 15px;
@@ -1685,12 +1711,22 @@ main .section-1 .list-product .card .price h3 {
     font-size: 14px;
   }
 }
+@media (max-width: 1366px) {
+  main .section-1 .list-product .card .price h3 {
+    font-size: 12px;
+  }
+}
 main .section-1 .list-product .card .price h3 + h3 {
   text-decoration: line-through;
   margin-right: 0;
 }
 main .section-1 .list-product .card .vote i {
   color: rgb(255, 184, 102);
+}
+@media (max-width: 420px) {
+  main .section-1 .list-product .card .vote i {
+    font-size: 12px;
+  }
 }
 main .section-1 .list-product .card .sale-off {
   background: #FF710A;
@@ -1700,6 +1736,18 @@ main .section-1 .list-product .card .sale-off {
   left: 10%;
   padding: 40px 8px;
 }
+@media (max-width: 768px) {
+  main .section-1 .list-product .card .sale-off {
+    padding: 25px 5px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 420px) {
+  main .section-1 .list-product .card .sale-off {
+    padding: 15px 3px;
+    font-size: 12px;
+  }
+}
 main .section-1 .list-product .card:hover a > img {
   opacity: 0;
   visibility: hidden;
@@ -1708,6 +1756,41 @@ main .section-1 .list-product .card:hover a > img {
 main .section-1 .list-product .card:hover a > img + img {
   opacity: 1;
   visibility: visible;
+}
+main .section-1 .pagination {
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  main .section-1 .pagination {
+    margin-top: 20px;
+  }
+}
+main .section-1 .pagination ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section-1 .pagination ul li {
+  margin: 0;
+  list-style: none;
+}
+main .section-1 .pagination ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 8px 15px;
+}
+@media (max-width: 768px) {
+  main .section-1 .pagination ul li a {
+    font-size: 14px;
+  }
+}
+main .section-1 .pagination ul li:nth-child(3) a {
+  background: black;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 3px;
 }
 
 footer {
