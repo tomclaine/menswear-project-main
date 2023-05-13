@@ -1641,6 +1641,10 @@ main .section-1 .heading-group .heading h3 {
 main .section-1 .heading-group .filter-sort {
   display: flex;
   margin-right: 0;
+  position: relative;
+}
+main .section-1 .heading-group .filter-sort .filter {
+  cursor: pointer;
 }
 @media (max-width: 420px) {
   main .section-1 .heading-group .filter-sort .filter {
@@ -1648,12 +1652,38 @@ main .section-1 .heading-group .filter-sort {
   }
 }
 main .section-1 .heading-group .filter-sort .sort {
+  cursor: pointer;
   margin-left: 10px;
 }
 @media (max-width: 420px) {
   main .section-1 .heading-group .filter-sort .sort {
     font-size: 14px;
   }
+}
+main .section-1 .heading-group .filter-sort .sub-sort {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 10;
+  background: white;
+  font-size: 16px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+main .section-1 .heading-group .filter-sort .sub-sort ul {
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  padding: 20px;
+}
+main .section-1 .heading-group .filter-sort .sub-sort ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+main .section-1 .heading-group .filter-sort .sub-sort ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
 }
 main .section-1 .list-product {
   margin-top: 40px;

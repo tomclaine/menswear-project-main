@@ -101,3 +101,19 @@ backTop.addEventListener("click",()=>{
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 });
+
+//show/hide submenu sort
+let btnShowSort = document.querySelector(".sort");
+let subSort = document.querySelector(".sub-sort");
+
+btnShowSort.addEventListener("click",()=>{
+    if(subSort.style.visibility === "hidden"){
+        subSort.style.visibility = "visible";
+        subSort.style.opacity = "1";
+    }
+    else{
+        subSort.style.visibility = "hidden";
+        subSort.style.opacity = "0";
+    }
+    
+})

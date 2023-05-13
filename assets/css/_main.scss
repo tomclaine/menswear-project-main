@@ -1081,15 +1081,44 @@ main{
             .filter-sort{
                 display: flex;
                 margin-right: 0;
+                position: relative;
                 .filter{
+                    cursor: pointer;
                     @include breakpoint(phone){
                         font-size: 14px;
                     }
                 }
                 .sort{
+                    cursor: pointer;
                     margin-left: 10px;
                     @include breakpoint(phone){
                         font-size: 14px;
+                    }
+                }
+                .sub-sort{
+                    position: absolute;
+                    top: 30px;
+                    right: 0;
+                    z-index: 10;
+                    background: white;
+                    font-size: 16px;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all 0.4s;
+                    ul{
+                        border: 1px solid #f3f3f3;
+                        border-radius: 5px;
+                        padding: 20px;
+                        li{
+                            list-style: none;
+                            padding: 5px 0;
+                            a{
+                                text-decoration: none;
+                                color: black;
+                                display: block;
+
+                            }
+                        }
                     }
                 }
             }
