@@ -1259,18 +1259,18 @@ main .new-products .owl-carousel .owl-nav .owl-next::after {
   top: 35%;
   right: 35px;
 }
-main .section-1 {
+main .collection-1 {
   padding: 50px 0;
 }
 @media (max-width: 768px) {
-  main .section-1 {
+  main .collection-1 {
     padding: 30px 0;
   }
 }
-main .section-1 .lookHot {
+main .collection-1 .lookHot {
   display: flex;
 }
-main .section-1 .lookHot .lookHot_head {
+main .collection-1 .lookHot .lookHot_head {
   width: 23%;
   background: #f4f4f4;
   padding: 4em;
@@ -1280,35 +1280,35 @@ main .section-1 .lookHot .lookHot_head {
   justify-content: center;
 }
 @media (max-width: 1366px) {
-  main .section-1 .lookHot .lookHot_head {
+  main .collection-1 .lookHot .lookHot_head {
     width: 30%;
     padding: 2em;
   }
 }
 @media (max-width: 768px) {
-  main .section-1 .lookHot .lookHot_head {
+  main .collection-1 .lookHot .lookHot_head {
     padding: 1em;
     width: 50%;
   }
 }
-main .section-1 .lookHot .lookHot_head h3 {
+main .collection-1 .lookHot .lookHot_head h3 {
   margin-bottom: 30px;
   font-size: 24px;
   margin-left: 0;
 }
 @media (max-width: 1366px) {
-  main .section-1 .lookHot .lookHot_head h3 {
+  main .collection-1 .lookHot .lookHot_head h3 {
     font-size: 18px;
     margin-bottom: 15px;
   }
 }
 @media (max-width: 768px) {
-  main .section-1 .lookHot .lookHot_head h3 {
+  main .collection-1 .lookHot .lookHot_head h3 {
     font-size: 16px;
     margin-bottom: 10px;
   }
 }
-main .section-1 .lookHot .lookHot_head p {
+main .collection-1 .lookHot .lookHot_head p {
   margin-bottom: 30px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -1317,48 +1317,48 @@ main .section-1 .lookHot .lookHot_head p {
   overflow: hidden;
 }
 @media (max-width: 768px) {
-  main .section-1 .lookHot .lookHot_head p {
+  main .collection-1 .lookHot .lookHot_head p {
     font-size: 14px;
   }
 }
-main .section-1 .lookHot .lookHot_head a {
+main .collection-1 .lookHot .lookHot_head a {
   margin-left: 0;
   color: black;
   display: block;
 }
 @media (max-width: 768px) {
-  main .section-1 .lookHot .lookHot_head a {
+  main .collection-1 .lookHot .lookHot_head a {
     font-size: 14px;
   }
 }
-main .section-1 .lookHot .lookHot_carousel {
+main .collection-1 .lookHot .lookHot_carousel {
   width: 77%;
   display: flex;
   height: 100%;
 }
 @media (max-width: 1366px) {
-  main .section-1 .lookHot .lookHot_carousel {
+  main .collection-1 .lookHot .lookHot_carousel {
     width: 70%;
   }
 }
 @media (max-width: 768px) {
-  main .section-1 .lookHot .lookHot_carousel {
+  main .collection-1 .lookHot .lookHot_carousel {
     width: 50%;
   }
 }
-main .section-1 .lookHot .lookHot_carousel a img {
+main .collection-1 .lookHot .lookHot_carousel a img {
   width: 100%;
 }
-main .section-1 .lookHot .owl-carousel .owl-nav {
+main .collection-1 .lookHot .owl-carousel .owl-nav {
   display: block !important;
 }
-main .section-1 .lookHot .owl-carousel .owl-nav span {
+main .collection-1 .lookHot .owl-carousel .owl-nav span {
   display: none;
 }
-main .section-1 .lookHot .owl-carousel .owl-nav .owl-prev {
+main .collection-1 .lookHot .owl-carousel .owl-nav .owl-prev {
   font-family: "fontAwesome";
 }
-main .section-1 .lookHot .owl-carousel .owl-nav .owl-prev::before {
+main .collection-1 .lookHot .owl-carousel .owl-nav .owl-prev::before {
   content: "\f053";
   padding: 12px 15px;
   border: 1px solid white;
@@ -1370,19 +1370,19 @@ main .section-1 .lookHot .owl-carousel .owl-nav .owl-prev::before {
   left: 35px;
 }
 @media (max-width: 768px) {
-  main .section-1 .lookHot .owl-carousel .owl-nav .owl-prev::before {
+  main .collection-1 .lookHot .owl-carousel .owl-nav .owl-prev::before {
     left: 5px;
   }
 }
 @media (max-width: 420px) {
-  main .section-1 .lookHot .owl-carousel .owl-nav .owl-prev::before {
+  main .collection-1 .lookHot .owl-carousel .owl-nav .owl-prev::before {
     display: none;
   }
 }
-main .section-1 .lookHot .owl-carousel .owl-nav .owl-next {
+main .collection-1 .lookHot .owl-carousel .owl-nav .owl-next {
   font-family: "fontAwesome";
 }
-main .section-1 .lookHot .owl-carousel .owl-nav .owl-next::after {
+main .collection-1 .lookHot .owl-carousel .owl-nav .owl-next::after {
   content: "\f054";
   padding: 12px 15px;
   border: 1px solid white;
@@ -1394,16 +1394,16 @@ main .section-1 .lookHot .owl-carousel .owl-nav .owl-next::after {
   right: 35px;
 }
 @media (max-width: 768px) {
-  main .section-1 .lookHot .owl-carousel .owl-nav .owl-next::after {
+  main .collection-1 .lookHot .owl-carousel .owl-nav .owl-next::after {
     right: 5px;
   }
 }
 @media (max-width: 420px) {
-  main .section-1 .lookHot .owl-carousel .owl-nav .owl-next::after {
+  main .collection-1 .lookHot .owl-carousel .owl-nav .owl-next::after {
     display: none;
   }
 }
-main .section-2 {
+main .collection-2 {
   padding: 50px 0;
   display: flex;
   width: 100%;
@@ -1411,93 +1411,93 @@ main .section-2 {
   gap: 2px;
 }
 @media (max-width: 768px) {
-  main .section-2 {
+  main .collection-2 {
     padding: 30px 0;
     height: 70vh;
   }
 }
-main .section-2 .img-left {
+main .collection-2 .img-left {
   width: 50%;
   background-image: url(../images/bst-tai-sinh-01x0x0x2.webp);
   background-position: center;
   background-size: cover;
   height: 100%;
 }
-main .section-2 .img-right {
+main .collection-2 .img-right {
   width: 50%;
   background-image: url(../images/bst-tai-sinh-02x0x0x2.webp);
   background-position: center;
   background-size: cover;
   height: 100%;
 }
-main .section-3 {
+main .collection-3 {
   padding: 50px 0;
 }
 @media (max-width: 768px) {
-  main .section-3 {
+  main .collection-3 {
     padding: 30px 0;
   }
 }
-main .section-3 .cards-carousel {
+main .collection-3 .cards-carousel {
   margin-top: 40px;
   position: relative;
   width: 100%;
 }
-main .section-3 .cards-carousel .card {
+main .collection-3 .cards-carousel .card {
   cursor: pointer;
   margin: 0 20px;
   position: relative;
 }
-main .section-3 .cards-carousel .card a {
+main .collection-3 .cards-carousel .card a {
   position: relative;
   display: block;
   text-decoration: none;
   color: black;
 }
-main .section-3 .cards-carousel .card a img {
+main .collection-3 .cards-carousel .card a img {
   width: 100%;
   transition: all 0.5s;
 }
-main .section-3 .cards-carousel .card a > img {
+main .collection-3 .cards-carousel .card a > img {
   opacity: 1;
 }
-main .section-3 .cards-carousel .card a > img + img {
+main .collection-3 .cards-carousel .card a > img + img {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   visibility: hidden;
 }
-main .section-3 .cards-carousel .card h4 {
+main .collection-3 .cards-carousel .card h4 {
   margin-top: 20px;
   margin-bottom: 15px;
   font-weight: 500;
 }
 @media (max-width: 1366px) {
-  main .section-3 .cards-carousel .card h4 {
+  main .collection-3 .cards-carousel .card h4 {
     font-size: 16px;
   }
 }
-main .section-3 .cards-carousel .card .price {
+main .collection-3 .cards-carousel .card .price {
   display: flex;
   margin-bottom: 15px;
 }
-main .section-3 .cards-carousel .card .price h3 {
+main .collection-3 .cards-carousel .card .price h3 {
   margin-left: 0;
 }
 @media (max-width: 1366px) {
-  main .section-3 .cards-carousel .card .price h3 {
+  main .collection-3 .cards-carousel .card .price h3 {
     font-size: 14px;
   }
 }
-main .section-3 .cards-carousel .card .price h3 + h3 {
+main .collection-3 .cards-carousel .card .price h3 + h3 {
   text-decoration: line-through;
   margin-right: 0;
 }
-main .section-3 .cards-carousel .card .vote i {
+main .collection-3 .cards-carousel .card .vote i {
   color: rgb(255, 184, 102);
 }
-main .section-3 .cards-carousel .card .sale-off {
+main .collection-3 .cards-carousel .card .sale-off {
   background: #FF710A;
   color: white;
   position: absolute;
@@ -1505,25 +1505,25 @@ main .section-3 .cards-carousel .card .sale-off {
   left: 10%;
   padding: 40px 8px;
 }
-main .section-3 .cards-carousel .card:hover a > img {
+main .collection-3 .cards-carousel .card:hover a > img {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s;
 }
-main .section-3 .cards-carousel .card:hover a > img + img {
+main .collection-3 .cards-carousel .card:hover a > img + img {
   opacity: 1;
   visibility: visible;
 }
-main .section-3 .owl-carousel .owl-nav {
+main .collection-3 .owl-carousel .owl-nav {
   display: block !important;
 }
-main .section-3 .owl-carousel .owl-nav span {
+main .collection-3 .owl-carousel .owl-nav span {
   display: none;
 }
-main .section-3 .owl-carousel .owl-nav .owl-prev {
+main .collection-3 .owl-carousel .owl-nav .owl-prev {
   font-family: "fontAwesome";
 }
-main .section-3 .owl-carousel .owl-nav .owl-prev::before {
+main .collection-3 .owl-carousel .owl-nav .owl-prev::before {
   content: "\f053";
   padding: 12px 15px;
   background: rgba(0, 0, 0, 0.1);
@@ -1533,10 +1533,10 @@ main .section-3 .owl-carousel .owl-nav .owl-prev::before {
   top: 35%;
   left: 35px;
 }
-main .section-3 .owl-carousel .owl-nav .owl-next {
+main .collection-3 .owl-carousel .owl-nav .owl-next {
   font-family: "fontAwesome";
 }
-main .section-3 .owl-carousel .owl-nav .owl-next::after {
+main .collection-3 .owl-carousel .owl-nav .owl-next::after {
   content: "\f054";
   padding: 12px 15px;
   background: rgba(0, 0, 0, 0.1);
@@ -1547,15 +1547,15 @@ main .section-3 .owl-carousel .owl-nav .owl-next::after {
   top: 35%;
   right: 35px;
 }
-main .section-4 {
+main .collection-4 {
   padding: 50px 0;
 }
 @media (max-width: 768px) {
-  main .section-4 {
+  main .collection-4 {
     padding: 30px 0;
   }
 }
-main .section-4 .img-content {
+main .collection-4 .img-content {
   background-image: url(../images/bst-tai-sinh-min.jpg);
   background-position: center;
   background-size: cover;
@@ -1563,26 +1563,26 @@ main .section-4 .img-content {
   margin-bottom: 30px;
 }
 @media (max-width: 768px) {
-  main .section-4 .img-content {
+  main .collection-4 .img-content {
     height: 50vh;
   }
 }
-main .section-4 .content {
+main .collection-4 .content {
   width: 90%;
   text-align: center;
 }
-main .section-4 .content h3 {
+main .collection-4 .content h3 {
   margin-bottom: 30px;
   font-size: 24px;
 }
 @media (max-width: 768px) {
-  main .section-4 .content h3 {
+  main .collection-4 .content h3 {
     font-size: 18px;
     margin-bottom: 15px;
   }
 }
 @media (max-width: 768px) {
-  main .section-4 .content p {
+  main .collection-4 .content p {
     font-size: 14px;
     text-align: justify;
   }
@@ -1613,54 +1613,54 @@ main .map iframe {
   width: 100%;
   height: 70vh;
 }
-main .section-1 {
+main .product-1 {
   padding: 50px 0;
 }
 @media (max-width: 768px) {
-  main .section-1 {
+  main .product-1 {
     padding: 30px 0;
   }
 }
-main .section-1 .heading-group {
+main .product-1 .heading-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
-main .section-1 .heading-group .heading {
+main .product-1 .heading-group .heading {
   margin-left: 0;
 }
-main .section-1 .heading-group .heading h3 {
+main .product-1 .heading-group .heading h3 {
   font-size: 24px;
 }
 @media (max-width: 420px) {
-  main .section-1 .heading-group .heading h3 {
+  main .product-1 .heading-group .heading h3 {
     font-size: 20px;
   }
 }
-main .section-1 .heading-group .filter-sort {
+main .product-1 .heading-group .filter-sort {
   display: flex;
   margin-right: 0;
   position: relative;
 }
-main .section-1 .heading-group .filter-sort .filter {
+main .product-1 .heading-group .filter-sort .filter {
   cursor: pointer;
 }
 @media (max-width: 420px) {
-  main .section-1 .heading-group .filter-sort .filter {
+  main .product-1 .heading-group .filter-sort .filter {
     font-size: 14px;
   }
 }
-main .section-1 .heading-group .filter-sort .sort {
+main .product-1 .heading-group .filter-sort .sort {
   cursor: pointer;
   margin-left: 10px;
 }
 @media (max-width: 420px) {
-  main .section-1 .heading-group .filter-sort .sort {
+  main .product-1 .heading-group .filter-sort .sort {
     font-size: 14px;
   }
 }
-main .section-1 .heading-group .filter-sort .sub-sort {
+main .product-1 .heading-group .filter-sort .sub-sort {
   position: absolute;
   top: 30px;
   right: 0;
@@ -1671,21 +1671,21 @@ main .section-1 .heading-group .filter-sort .sub-sort {
   opacity: 0;
   transition: all 0.4s;
 }
-main .section-1 .heading-group .filter-sort .sub-sort ul {
+main .product-1 .heading-group .filter-sort .sub-sort ul {
   border: 1px solid #f3f3f3;
   border-radius: 5px;
   padding: 20px;
 }
-main .section-1 .heading-group .filter-sort .sub-sort ul li {
+main .product-1 .heading-group .filter-sort .sub-sort ul li {
   list-style: none;
   padding: 5px 0;
 }
-main .section-1 .heading-group .filter-sort .sub-sort ul li a {
+main .product-1 .heading-group .filter-sort .sub-sort ul li a {
   text-decoration: none;
   color: black;
   display: block;
 }
-main .section-1 .list-product {
+main .product-1 .list-product {
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
@@ -1693,87 +1693,87 @@ main .section-1 .list-product {
   justify-content: space-between;
   width: 100%;
 }
-main .section-1 .list-product .card {
+main .product-1 .list-product .card {
   cursor: pointer;
   width: 22%;
   margin: 0 0 45px 0;
   position: relative;
 }
 @media (max-width: 1366px) {
-  main .section-1 .list-product .card {
+  main .product-1 .list-product .card {
     width: 45%;
   }
 }
 @media (max-width: 420px) {
-  main .section-1 .list-product .card {
+  main .product-1 .list-product .card {
     margin-bottom: 20px;
   }
 }
-main .section-1 .list-product .card a {
+main .product-1 .list-product .card a {
   position: relative;
   display: block;
   text-decoration: none;
   color: black;
 }
-main .section-1 .list-product .card a img {
+main .product-1 .list-product .card a img {
   width: 100%;
   transition: all 0.5s;
 }
-main .section-1 .list-product .card a > img {
+main .product-1 .list-product .card a > img {
   opacity: 1;
 }
-main .section-1 .list-product .card a > img + img {
+main .product-1 .list-product .card a > img + img {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   visibility: hidden;
 }
-main .section-1 .list-product .card h4 {
+main .product-1 .list-product .card h4 {
   margin-top: 20px;
   margin-bottom: 15px;
   font-weight: 500;
 }
 @media (max-width: 1366px) {
-  main .section-1 .list-product .card h4 {
+  main .product-1 .list-product .card h4 {
     font-size: 16px;
   }
 }
 @media (max-width: 420px) {
-  main .section-1 .list-product .card h4 {
+  main .product-1 .list-product .card h4 {
     font-size: 14px;
   }
 }
-main .section-1 .list-product .card .price {
+main .product-1 .list-product .card .price {
   display: flex;
   margin-bottom: 15px;
 }
-main .section-1 .list-product .card .price h3 {
+main .product-1 .list-product .card .price h3 {
   margin-left: 0;
 }
 @media (max-width: 1366px) {
-  main .section-1 .list-product .card .price h3 {
+  main .product-1 .list-product .card .price h3 {
     font-size: 14px;
   }
 }
 @media (max-width: 1366px) {
-  main .section-1 .list-product .card .price h3 {
+  main .product-1 .list-product .card .price h3 {
     font-size: 12px;
   }
 }
-main .section-1 .list-product .card .price h3 + h3 {
+main .product-1 .list-product .card .price h3 + h3 {
   text-decoration: line-through;
   margin-right: 0;
 }
-main .section-1 .list-product .card .vote i {
+main .product-1 .list-product .card .vote i {
   color: rgb(255, 184, 102);
 }
 @media (max-width: 420px) {
-  main .section-1 .list-product .card .vote i {
+  main .product-1 .list-product .card .vote i {
     font-size: 12px;
   }
 }
-main .section-1 .list-product .card .sale-off {
+main .product-1 .list-product .card .sale-off {
   background: #FF710A;
   color: white;
   position: absolute;
@@ -1782,100 +1782,100 @@ main .section-1 .list-product .card .sale-off {
   padding: 40px 8px;
 }
 @media (max-width: 768px) {
-  main .section-1 .list-product .card .sale-off {
+  main .product-1 .list-product .card .sale-off {
     padding: 25px 5px;
     font-size: 12px;
   }
 }
 @media (max-width: 420px) {
-  main .section-1 .list-product .card .sale-off {
+  main .product-1 .list-product .card .sale-off {
     padding: 15px 3px;
     font-size: 12px;
   }
 }
-main .section-1 .list-product .card:hover a > img {
+main .product-1 .list-product .card:hover a > img {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s;
 }
-main .section-1 .list-product .card:hover a > img + img {
+main .product-1 .list-product .card:hover a > img + img {
   opacity: 1;
   visibility: visible;
 }
-main .section-1 .pagination {
+main .product-1 .pagination {
   margin-top: 40px;
 }
 @media (max-width: 768px) {
-  main .section-1 .pagination {
+  main .product-1 .pagination {
     margin-top: 20px;
   }
 }
-main .section-1 .pagination ul {
+main .product-1 .pagination ul {
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .section-1 .pagination ul li {
+main .product-1 .pagination ul li {
   margin: 0;
   list-style: none;
 }
-main .section-1 .pagination ul li a {
+main .product-1 .pagination ul li a {
   text-decoration: none;
   color: black;
   display: block;
   padding: 8px 15px;
 }
 @media (max-width: 768px) {
-  main .section-1 .pagination ul li a {
+  main .product-1 .pagination ul li a {
     font-size: 14px;
   }
 }
-main .section-1 .pagination ul li:nth-child(3) a {
+main .product-1 .pagination ul li:nth-child(3) a {
   background: black;
   color: white;
   padding: 8px 15px;
   border-radius: 3px;
 }
-main .section-2 {
+main .product-2 {
   padding: 50px 0;
   height: 100%;
 }
 @media (max-width: 768px) {
-  main .section-2 {
+  main .product-2 {
     padding: 30px 0;
   }
 }
-main .section-2 .heading h3 {
+main .product-2 .heading h3 {
   font-size: 24px;
 }
 @media (max-width: 420px) {
-  main .section-2 .heading h3 {
+  main .product-2 .heading h3 {
     font-size: 20px;
   }
 }
-main .section-2 .cate-carousel {
+main .product-2 .cate-carousel {
   margin-top: 40px;
   position: relative;
   width: 100%;
 }
-main .section-2 .cate-carousel .item {
+main .product-2 .cate-carousel .item {
   cursor: pointer;
   margin: 0 10px;
   position: relative;
 }
-main .section-2 .cate-carousel .item a {
+main .product-2 .cate-carousel .item a {
   position: relative;
   display: block;
   text-decoration: none;
   color: black;
   height: 100%;
 }
-main .section-2 .cate-carousel .item a img {
+main .product-2 .cate-carousel .item a img {
   width: 100%;
   height: 100%;
 }
-main .section-2 .cate-carousel .item h3 {
+main .product-2 .cate-carousel .item h3 {
   position: absolute;
   font-size: 40px;
   top: 50%;
@@ -1884,32 +1884,32 @@ main .section-2 .cate-carousel .item h3 {
   color: white;
 }
 @media (max-width: 768px) {
-  main .section-2 .cate-carousel .item h3 {
+  main .product-2 .cate-carousel .item h3 {
     font-size: 30px;
   }
 }
 @media (max-width: 420px) {
-  main .section-2 .cate-carousel .item h3 {
+  main .product-2 .cate-carousel .item h3 {
     font-size: 25px;
   }
 }
-main .section-2 .cate-carousel .item .overlay {
+main .product-2 .cate-carousel .item .overlay {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
-main .section-2 .owl-carousel .owl-nav {
+main .product-2 .owl-carousel .owl-nav {
   display: block !important;
 }
-main .section-2 .owl-carousel .owl-nav span {
+main .product-2 .owl-carousel .owl-nav span {
   display: none;
 }
-main .section-2 .owl-carousel .owl-nav .owl-prev {
+main .product-2 .owl-carousel .owl-nav .owl-prev {
   font-family: "fontAwesome";
 }
-main .section-2 .owl-carousel .owl-nav .owl-prev::before {
+main .product-2 .owl-carousel .owl-nav .owl-prev::before {
   content: "\f053";
   padding: 12px 15px;
   background: rgba(0, 0, 0, 0.1);
@@ -1921,10 +1921,10 @@ main .section-2 .owl-carousel .owl-nav .owl-prev::before {
   transform: translateY(-50%);
   left: 25px;
 }
-main .section-2 .owl-carousel .owl-nav .owl-next {
+main .product-2 .owl-carousel .owl-nav .owl-next {
   font-family: "fontAwesome";
 }
-main .section-2 .owl-carousel .owl-nav .owl-next::after {
+main .product-2 .owl-carousel .owl-nav .owl-next::after {
   content: "\f054";
   padding: 12px 15px;
   background: rgba(0, 0, 0, 0.1);
@@ -1935,6 +1935,278 @@ main .section-2 .owl-carousel .owl-nav .owl-next::after {
   top: 50%;
   transform: translateY(-50%);
   right: 25px;
+}
+main .filter-area {
+  background: white;
+  min-width: 450px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 101;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: all 0.5s;
+  overflow-y: scroll;
+}
+@media (max-width: 768px) {
+  main .filter-area {
+    min-width: 80%;
+  }
+}
+main .filter-area .heading {
+  padding: 15px 0 15px 0;
+  border-bottom: 1px solid #f3f3f3;
+  width: 100%;
+}
+main .filter-area .heading h3 {
+  font-size: 24px;
+  padding-left: 15px;
+}
+main .filter-area .list-filter {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 400px;
+  border-bottom: 1px solid #f3f3f3;
+}
+@media (max-width: 768px) {
+  main .filter-area .list-filter {
+    padding-bottom: 20px;
+  }
+}
+main .filter-area .list-filter ul {
+  padding-left: 15px;
+}
+main .filter-area .list-filter ul li {
+  list-style: none;
+  padding: 15px 0 15px 0;
+}
+main .filter-area .list-filter ul li .sub-product {
+  display: none;
+}
+main .filter-area .list-filter ul li .sub-product li a {
+  font-size: 16px;
+}
+main .filter-area .list-filter ul li .sub-product li:last-child {
+  padding: 15px 0 0 0;
+}
+main .filter-area .list-filter ul li .sub-form {
+  padding: 15px 15px 0 0;
+  display: none;
+}
+main .filter-area .list-filter ul li .sub-form table {
+  width: 100%;
+  border-spacing: 10px;
+}
+@media (max-width: 420px) {
+  main .filter-area .list-filter ul li .sub-form table {
+    border-spacing: 5px;
+  }
+}
+main .filter-area .list-filter ul li .sub-form table td {
+  padding: 5px 10px;
+  background: #f4f4f4;
+  text-align: center;
+  cursor: pointer;
+}
+@media (max-width: 420px) {
+  main .filter-area .list-filter ul li .sub-form table td {
+    padding: 3px 5px;
+    font-size: 14px;
+  }
+}
+main .filter-area .list-filter ul li .sub-size {
+  padding: 15px 15px 0 0;
+  display: none;
+}
+main .filter-area .list-filter ul li .sub-size table {
+  width: 100%;
+  border-spacing: 10px;
+}
+main .filter-area .list-filter ul li .sub-size table td {
+  padding: 5px 10px;
+  background: #f4f4f4;
+  text-align: center;
+  cursor: pointer;
+}
+@media (max-width: 420px) {
+  main .filter-area .list-filter ul li .sub-size table td {
+    font-size: 14px;
+  }
+}
+main .filter-area .list-filter ul li .sub-color {
+  padding: 15px 15px 0 0;
+  display: none;
+}
+main .filter-area .list-filter ul li .sub-color table {
+  width: 100%;
+}
+main .filter-area .list-filter ul li .sub-color table td {
+  padding: 10px 10px 10px 0;
+}
+main .filter-area .list-filter ul li .sub-color table td .color {
+  cursor: pointer;
+  margin: 0;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+}
+main .filter-area .list-filter ul li .sub-color table td .color1 {
+  background: red;
+}
+main .filter-area .list-filter ul li .sub-color table td .color2 {
+  background: green;
+}
+main .filter-area .list-filter ul li .sub-color table td .color3 {
+  background: blue;
+}
+main .filter-area .list-filter ul li .sub-color table td .color4 {
+  background: yellow;
+}
+main .filter-area .list-filter ul li .sub-color table td .color5 {
+  background: orange;
+}
+main .filter-area .list-filter ul li .sub-color table td .color7 {
+  background: pink;
+}
+main .filter-area .list-filter ul li .sub-color table td .color8 {
+  background: black;
+}
+main .filter-area .list-filter ul li .sub-color table td .color9 {
+  background: violet;
+}
+main .filter-area .list-filter ul li .sub-color table td .color10 {
+  background: brown;
+}
+main .filter-area .list-filter ul li .sub-color table td .color11 {
+  background: olive;
+}
+main .filter-area .list-filter ul li .sub-color table td .color12 {
+  background: orangered;
+}
+main .filter-area .list-filter ul li .sub-color table td .color13 {
+  background: yellowgreen;
+}
+main .filter-area .list-filter ul li .sub-color table td .color14 {
+  background: orchid;
+}
+main .filter-area .list-filter ul li .sub-color table td .color15 {
+  background: burlywood;
+}
+main .filter-area .list-filter ul li .sub-price-range {
+  padding: 15px 15px 0 0;
+  display: none;
+}
+main .filter-area .list-filter ul li .sub-price-range p {
+  color: grey;
+}
+main .filter-area .list-filter ul li .sub-price-range .price-area {
+  display: flex;
+  padding-top: 15px;
+  width: 100%;
+}
+main .filter-area .list-filter ul li .sub-price-range .price-area input {
+  outline: none;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+@media (max-width: 768px) {
+  main .filter-area .list-filter ul li .sub-price-range .price-area input {
+    max-width: 150px;
+  }
+}
+@media (max-width: 420px) {
+  main .filter-area .list-filter ul li .sub-price-range .price-area input {
+    max-width: 120px;
+  }
+}
+main .filter-area .list-filter ul li .sub-price-range .price-area h3 {
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  main .filter-area .list-filter ul li .sub-price-range .price-area h3 {
+    font-size: 15px;
+  }
+}
+main .filter-area .list-filter ul li .sub-price-range .price-area .price-min {
+  margin-left: 0;
+}
+main .filter-area .list-filter ul li .sub-price-range .price-area .price-max {
+  margin-right: 0;
+}
+main .filter-area .list-filter ul li .sub-price-range .price-area .price-max h3 {
+  text-align: right;
+}
+main .filter-area .list-filter ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  position: relative;
+  display: block;
+  transition: all 0.3s;
+}
+main .filter-area .list-filter ul li a i {
+  font-size: 15px;
+  position: absolute;
+  right: 15px;
+}
+main .filter-area .list-filter ul li a:hover {
+  color: red;
+}
+main .filter-area .btns {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+main .filter-area .btns .del-filter {
+  padding: 15px 50px;
+  border: none;
+  margin-right: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+main .filter-area .btns .del-filter:hover {
+  background: red;
+  color: white;
+}
+main .filter-area .btns .apply {
+  padding: 15px 50px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 16px;
+}
+main .filter-area .btns .apply:hover {
+  background: red;
+}
+main .filter-area .close-filter {
+  position: absolute;
+  top: 15px;
+  cursor: pointer;
+  right: 15px;
+}
+main .filter-area .close-filter i {
+  font-size: 30px;
+  transition: all 0.3s;
+}
+main .filter-area .close-filter i:hover {
+  color: red;
+}
+main ::-webkit-scrollbar {
+  width: 5px;
+}
+main ::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
 }
 
 footer {
