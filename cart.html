@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MenswearPJ</title>
+    <title>Giỏ hàng</title>
     <link rel="icon" type="image/png" sizes="16x16"  href="./assets/images/favicon-16x16.png">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="./lib/fontawesome-6.4.0/css/fontawesome.min.css">
     <link rel="stylesheet" href="/lib/fontawesome-6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css">
@@ -44,7 +43,7 @@
                 </div>
             </div>           
         </div>  
-        <div class="banner banner-product">
+        <div class="banner sticky">
             <div class="container">
                 <div class="header_main">
                     <div class="hamburger">
@@ -156,30 +155,137 @@
         </div>
     </header>
     <main>
-        <section class="product-1">
+        <section class="cart-1">
             <div class="container">
-                <div class="heading-group">
-                    <div class="heading">
-                        <h3>ÁO SƠ MI</h3>
+                <div class="status-cart">
+                    <div class="status status-1">
+                        <i class="fa-solid fa-check"></i>
+                        <h3>Giỏ hàng</h3>
                     </div>
-                    <div class="filter-sort">
-                        <div class="filter">
-                            Bộ lọc <i class="fa fa-filter"></i>
-                        </div>
-                        <div class="sort">
-                            Sắp xếp <i class="fa fa-sort"></i>   
-                        </div>
-                        <div class="sub-sort">
-                            <ul>
-                                <li><a href="">Best sale</a></li>
-                                <li><a href="">Sản phẩm mới</a></li>
-                                <li><a href="">Giá giảm dần</a></li>
-                                <li><a href="">Giá tăng dần</a></li>
-                            </ul>
-                        </div>
+                    <div class="crossbar"></div>
+                    <div class="status status-2">
+                        <h3>Đặt hàng</h3>
+                    </div>
+                    <div class="crossbar"></div>
+                    <div class="status status-3">
+                        <h3>Thành công</h3>
                     </div>
                 </div>
-                <div class="list-product">
+            </div>
+        </section>
+        <section class="cart-2">
+            <div class="container">
+                <div class="box-order">
+                    <div class="left">
+                        <div class="heading">
+                            <h3>GIỎ HÀNG CỦA BẠN</h3>
+                            <a href="./product.html">Chọn thêm sản phẩm</a>
+                        </div>
+                        <table>
+                            <tr>
+                                <td class="image-product">
+                                    <a href="">
+                                        <img src="./assets/images/_TC_2514x500x500x4.webp" alt="">
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="info-product">
+                                        <h4 class="name-product">
+                                            <a href="">Áo sơ mi họa tiết ngắn tay</a>
+                                        </h4>
+                                        <div class="choose-size">
+                                            <p class="show-popUp">Trắng / 43 <i class="fa fa-chevron-down"></i></p>
+                                            <div class="chooseSize-drop">
+                                                <div class="info-production">
+                                                    <div class="option-product">
+                                                        <p>Màu: Trắng họa tiết</p>
+                                                        <div class="image-tiny">
+                                                            <ul>
+                                                                <li class="active"><img src="./assets/images/_TC_2514x500x500x4.webp" alt=""></li>
+                                                                <li><img src="./assets/images/NTC_5475x500x500x4.webp" alt=""></li>
+                                                                <li><img src="./assets/images/Ao-so-mi-dai-tay-aristino-ALS07802-3-x500x500x4.webp" alt=""></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option-size">
+                                                        <p>Chọn size</p>
+                                                        <div class="sizes">
+                                                            <ul>
+                                                                <li>38</li>
+                                                                <li>39</li>
+                                                                <li>40</li>
+                                                                <li>41</li>
+                                                                <li>42</li>
+                                                                <li class="active">43</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="button-area">
+                                                        <button class="closePopup">Trở lại</button>
+                                                        <button class="edit-confirm">Xác nhận</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="quantity">
+                                            <button><i class="fa fa-minus"></i></button>
+                                            <input type="text" value="1">
+                                            <button><i class="fa fa-plus"></i></button>
+                                        </div>
+                                        <div class="del-product">
+                                            <p>Xóa</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price-product">950.000đ</td>
+                            </tr>
+                            <tr>
+                                <td class="image-product">
+                                    <a href="">
+                                        <img src="./assets/images/_TC_5496x500x500x4.webp" alt="">
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="info-product">
+                                        <h4 class="name-product">
+                                            <a href="">Áo Polo màu xanh</a>
+                                        </h4>
+                                        <div class="choose-size">
+                                            <p>Xanh / XL <i class="fa fa-chevron-down"></i></p>
+                                        </div>
+                                        <div class="quantity">
+                                            <button><i class="fa fa-minus"></i></button>
+                                            <input type="text" value="1">
+                                            <button><i class="fa fa-plus"></i></button>
+                                        </div>
+                                        <div class="del-product">
+                                            <p>Xóa</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price-product">550.000đ</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="right">
+                        <div class="order-price">
+                            <h4>Tạm tính:</h4>
+                            <span>1.500.000đ</span>
+                        </div>
+                        <button>TIẾN HÀNH ĐẶT HÀNG</button>
+                        <h4>Ưu đãi hội viên</h4>
+                        <p>Tích điểm đổi quà và rất nhiều ưu đãi đặc biệt khác, chỉ dành cho hội viên của Aristino.</p>
+                        <span class="login">Đăng nhập</span> / <span class="register">Đăng ký hội viên</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cart-3">
+            <div class="container">
+                <div class="heading">
+                    <h3>Có thể bạn sẽ thích</h3>
+                </div>
+                <div class="cards-carousel owl-one owl-carousel">
                     <div class="card">
                         <a href="">
                             <img src="./assets/images/_TC_4982x500x500x4.webp" alt="">
@@ -201,40 +307,21 @@
                     </div>
                     <div class="card">
                         <a href="">
-                            <img src="./assets/images/_TC_2514x500x500x4.webp" alt="">
-                            <img src="./assets/images/_TC_2516x500x500x4.webp" alt="">
+                            <img src="./assets/images/_TC_5015x500x500x4.webp" alt="">
+                            <img src="./assets/images/_TC_5018x500x500x4.webp" alt="">
                         </a>
                         <h4 class="name-product">
-                            <a href="">Áo sơ mi họa tiết ngắn tay</a>
+                            <a href="">Áo sơ mi kẻ xám ngắn tay</a>
                         </h4>
                         <div class="price">
                             <h3 class="price-new">350.000đ</h3>
                             <h3 class="price-old">500.000đ</h3>
                         </div>
                         <div class="vote">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-solid fa-star"></i></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></i>
                         </div>
                         <div class="sale-off">
                             <span>15%</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="">
-                            <img src="./assets/images/_TC_5015x500x500x4.webp" alt="">
-                            <img src="./assets/images/_TC_5018x500x500x4.webp" alt="">
-                        </a>
-                        <h4 class="name-product">
-                            <a href="">Áo sơ mi kẻ ngắn tay</a>
-                        </h4>
-                        <div class="price">
-                            <h3 class="price-new">400.000đ</h3>
-                            <h3 class="price-old">550.000đ</h3>
-                        </div>
-                        <div class="vote">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-regular fa-star-half-stroke"></i></i>
-                        </div>
-                        <div class="sale-off">
-                            <span>10%</span>
                         </div>
                     </div>
                     <div class="card">
@@ -246,14 +333,14 @@
                             <a href="">Áo sơ mi trắng ngắn tay</a>
                         </h4>
                         <div class="price">
-                            <h3 class="price-new">450.000đ</h3>
-                            <h3 class="price-old">700.000đ</h3>
+                            <h3 class="price-new">550.000đ</h3>
+                            <h3 class="price-old">800.000đ</h3>
                         </div>
                         <div class="vote">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-regular fa-star-half-stroke"></i></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
                         <div class="sale-off">
-                            <span>10%</span>
+                            <span>15%</span>
                         </div>
                     </div>
                     <div class="card">
@@ -269,241 +356,82 @@
                             <h3 class="price-old">750.000đ</h3>
                         </div>
                         <div class="vote">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-regular fa-star-half-stroke"></i></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
                         <div class="sale-off">
-                            <span>20%</span>
+                            <span>30%</span>
                         </div>
                     </div>
                     <div class="card">
                         <a href="">
-                            <img src="./assets/images/_TC_5003x500x500x4.webp" alt="">
-                            <img src="./assets/images/_TC_5004x500x500x4.webp" alt="">
+                            <img src="./assets/images/_TC_2514x500x500x4.webp" alt="">
+                            <img src="./assets/images/_TC_2516x500x500x4.webp" alt="">
                         </a>
                         <h4 class="name-product">
-                            <a href="">Áo sơ mi kẻ đen dài tay</a>
+                            <a href="">Áo sơ mi họa tiết ngắn tay</a>
                         </h4>
                         <div class="price">
-                            <h3 class="price-new">600.000đ</h3>
-                            <!-- <h3 class="price-old">750.000đ</h3> -->
-                        </div>
-                        <div class="vote">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-regular fa-star-half-stroke"></i></i>
-                        </div>
-                        <!-- <div class="sale-off">
-                            <span>20%</span>
-                        </div> -->
-                    </div>
-                    <div class="card">
-                        <a href="">
-                            <img src="./assets/images/NTC_7490x500x500x4.webp" alt="">
-                            <img src="./assets/images/NTC_7491x500x500x4.webp" alt="">
-                        </a>
-                        <h4 class="name-product">
-                            <a href="">Áo sơ mi xám ngắn tay</a>
-                        </h4>
-                        <div class="price">
-                            <h3 class="price-new">750.000đ</h3>
-                            <!-- <h3 class="price-old">750.000đ</h3> -->
-                        </div>
-                        <div class="vote">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-regular fa-star-half-stroke"></i></i>
-                        </div>
-                        <!-- <div class="sale-off">
-                            <span>20%</span>
-                        </div> -->
-                    </div>
-                    <div class="card">
-                        <a href="">
-                            <img src="./assets/images/NTC_4389x500x500x4.webp" alt="">
-                            <img src="./assets/images/NTC_4387x500x500x4.webp" alt="">
-                        </a>
-                        <h4 class="name-product">
-                            <a href="">Áo sơ mi kẻ xanh tím than ngắn tay</a>
-                        </h4>
-                        <div class="price">
-                            <h3 class="price-new">800.000đ</h3>
-                            <!-- <h3 class="price-old">750.000đ</h3> -->
+                            <h3 class="price-new">500.000đ</h3>
+                            <h3 class="price-old">750.000đ</h3>
                         </div>
                         <div class="vote">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <!-- <div class="sale-off">
-                            <span>20%</span>
-                        </div> -->
+                        <div class="sale-off">
+                            <span>25%</span>
+                        </div>
                     </div>
-                </div>
-                <div class="pagination">
-                    <ul>
-                        <li><a href="">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li><a href="">4</a></li>
-                        <li><a href="">5</a></li>
-                    </ul>
+                    <div class="card">
+                        <a href="">
+                            <img src="./assets/images/_TC_9431x500x500x4.webp" alt="">
+                            <img src="./assets/images/_TC_9181x500x500x4.webp" alt="">
+                        </a>
+                        <h4 class="name-product">
+                            <a href="">Áo thun có cổ ngắn tay</a>
+                        </h4>
+                        <div class="price">
+                            <h3 class="price-new">450.000đ</h3>
+                            <h3 class="price-old">500.000đ</h3>
+                        </div>
+                        <div class="vote">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="sale-off">
+                            <span>10%</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="product-2">
+        <section class="cart-4">
             <div class="container">
-                <div class="heading">
-                    <h3>Danh mục nổi bật</h3>
-                </div>
-                <div class="cate-carousel owl-one owl-carousel">
-                    <div class="item">
-                        <a href="">
-                            <img src="./assets/images/Ao-blazer-Aristino-danh-m-c-n-i-b-t-1x500x500x4.webp" alt="">
-                            <div class="overlay"></div>
-                            <h3>Áo khoác</h3>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <img src="./assets/images/Ao-polo-Aristino-danh-m-c-n-i-b-t-2x500x500x4.webp" alt="">
-                            <div class="overlay"></div>
-                            <h3>Áo Polo</h3>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <img src="./assets/images/Ao-so-mi-Aristino-danh-m-c-n-i-b-t-3x500x500x4.webp" alt="">
-                            <div class="overlay"></div>
-                            <h3>Áo sơmi</h3>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <img src="./assets/images/Danh-m-c-n-i-b-t-2-Shortx500x500x4.webp" alt="">
-                            <div class="overlay"></div>
-                            <h3>Quần short</h3>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <img src="./assets/images/Quan-au-nam-Aristino-2022x500x500x4.webp" alt="">
-                            <div class="overlay"></div>
-                            <h3>Quần âu</h3>
-                        </a>
-                    </div>
-                </div>
-                <hr>
-            </div>
-        </section>
-        <div class="filter-area">
-            <div class="heading">
-                <h3>Lọc sản phẩm</h3>
-            </div>
-            <div class="list-filter">
-                <ul>
-                    <li>
-                        <a href="" class="drop-product">Loại sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class="sub-product">
-                            <li><a href="">Áo sơ mi</a></li>
-                            <li><a href="">Áo khoác</a></li>
-                            <li><a href="">Áo polo</a></li>
-                            <li><a href="">Quần âu</a></li>
-                            <li><a href="">Quần short</a></li>
-                            <li><a href="">Quần jean</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="" class="drop-form">Form / Dáng <i class="fa-solid fa-chevron-down"></i></a>
-                        <div class="sub-form">
-                            <table>
-                                <tr>
-                                    <td>Slim Fit</td>
-                                    <td>Regular Fit</td>
-                                    <td>Casual Fit</td>
-                                </tr>
-                                <tr>
-                                    <td>Body Fit</td>
-                                    <td>Carrot Fit</td>
-                                    <td>Perfect Fit</td>
-                                </tr>
-                                <tr>
-                                    <td>Tapered</td>
-                                    <td>Classic</td>
-                                    <td>Relax</td>
-                                    <td>Golf Fit</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="drop-size">Size <i class="fa-solid fa-chevron-down"></i></a>
-                        <div class="sub-size">
-                            <table>
-                                <tr>
-                                    <td>38</td>
-                                    <td>39</td>
-                                    <td>40</td>
-                                    <td>41</td>
-                                    <td>42</td>
-                                    <td>43</td>
-                                </tr>
-                                <tr>
-                                    <td>44</td>
-                                    <td>S</td>
-                                    <td>M</td>
-                                    <td>L</td>
-                                    <td>XL</td>
-                                    <td>XXL</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="drop-color">Màu sắc <i class="fa-solid fa-chevron-down"></i></a>
-                        <div class="sub-color">
-                            <table>
-                                <tr>
-                                    <td><div class="color color1"></div></td>
-                                    <td><div class="color color2"></div></td>
-                                    <td><div class="color color3"></div></td>
-                                    <td><div class="color color4"></div></td>
-                                    <td><div class="color color5"></div></td>
-                                    <td><div class="color color6"></div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="color color7"></div></td>
-                                    <td><div class="color color8"></div></td>
-                                    <td><div class="color color9"></div></td>
-                                    <td><div class="color color10"></div></td>
-                                    <td><div class="color color11"></div></td>
-                                    <td><div class="color color12"></div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="color color13"></div></td>
-                                    <td><div class="color color14"></div></td>
-                                    <td><div class="color color15"></div></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="drop-price-range">Khoảng giá <i class="fa-solid fa-chevron-down"></i></a>
-                        <div class="sub-price-range">
-                            <p>Nhập vào khoảng giá bạn muốn tìm kiếm</p>
-                            <div class="price-area">
-                                <div class="price-min">
-                                    <h3>Giá thấp nhất</h3>
-                                    <input type="number">
-                                </div>
-                                <div class="price-max">
-                                    <h3>Giá cao nhất</h3>
-                                    <input type="number">
-                                </div>
+                <div class="information-group">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="information-item">
+                                <img src="./assets/images/trus.svg" alt="">
+                                <h4>MIỄN PHÍ VẬN CHUYỂN</h4>
+                                <span>Miễn phí vận chuyển cho đơn hàng từ 500K</span>
                             </div>
                         </div>
-                    </li>
-                </ul>
+                        <div class="col-4">
+                            <div class="information-item">
+                                <img src="./assets/images/tranfer.svg" alt="">
+                                <h4>ĐỔI HÀNG DỄ DÀNG</h4>
+                                <span>Đổi sản phẩm trong vòng 30 ngày</span>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="information-item">
+                                <img src="./assets/images/Pay-Delivery.svg" alt="">
+                                <h4>THANH TOÁN COD TIỆN LỢI</h4>
+                                <span>Nhận hàng không đồng kiểm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="btns">
-                <button class="del-filter">Xóa lọc</button>
-                <button class="apply">Áp dụng</button>
-            </div>
-            <div class="close-filter"><i class="fa-solid fa-xmark"></i></div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="container">
@@ -564,8 +492,8 @@
             <a href="https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F"><img src="./assets/images/Logo.svg" alt=""></a>
         </div>
     </div>
-    <script src="/assets/js/main.js"></script>
-    <script src="./assets/js/productJS.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="/assets/js/cartJS.js"></script>
     <script src="./assets/jquery-3.6.4.min.js"></script>
     <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
     <script>

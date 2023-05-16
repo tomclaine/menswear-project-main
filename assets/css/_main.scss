@@ -1360,6 +1360,7 @@ main{
         }
     }
     .filter-area{
+        box-shadow: 0px 0px 10px -5px #818181;
         background: white;
         min-width: 450px;
         height: 100%;
@@ -1620,6 +1621,564 @@ main{
         background: grey;
         border-radius: 10px;
     }
-    
+
+//cart page
+//section1
+    .cart-1{
+        padding: 50px 0;
+        border-bottom: 1px solid #f2f2f2;
+        @include breakpoint(tablet){
+            padding: 30px 0;
+        }
+        .status-cart{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 50px;
+            @include breakpoint(tablet){
+                padding-bottom: 30px;
+            }
+            .status{
+                position: relative;
+                margin: 0;
+                min-width: 30px;
+                min-height: 30px;
+                background: black;
+                border-radius: 50%;
+                @include breakpoint(tablet){
+                    min-width: 25px;
+                    min-height: 25px;
+                }
+                i{
+                    color: white;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+                h3{
+                    position: absolute;
+                    top: 40px;
+                    left: -50%;
+                    font-size: 16px;
+                    min-width: 100px;
+                    @include breakpoint(tablet){
+                        font-size: 12px;
+                    }
+                }
+            }
+            .crossbar{
+                height: 3px;
+                background: black;
+                min-width: 200px;
+                margin: 0;
+                @include breakpoint(tablet){
+                    min-width: 100px;
+                }
+            }
+        }
+    }
+//section2
+    .cart-2{
+        padding: 50px 0;
+        @include breakpoint(tablet){
+            padding: 30px 0;
+        }
+        .box-order{
+            display: flex;
+            padding: 0 100px;
+            @include breakpoint(desktop){
+                padding: 0 10px;
+            }
+            @include breakpoint(tablet){
+                flex-direction: column;
+                padding: 0;
+            }
+            .left{
+                width: 70%;
+                @include breakpoint(desktop){
+                    width: 65%;
+                }
+                @include breakpoint(tablet){
+                    width: 100%;
+                }
+                
+                .heading{
+                    display: flex;
+                    border-bottom: 1px solid #f2f2f2;
+                    padding-bottom: 20px;
+                    align-items: center;
+                    justify-content: space-between;
+                    h3{
+                        margin: 0;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 14px;
+                        margin: 0;
+                    }
+                }
+                table{
+                    width: 100%;
+                    tr{
+                        @include breakpoint(tablet){
+                            position: relative;
+                         }
+                        td{
+                            vertical-align: top;
+                            padding-right: 35px;
+                            padding-bottom: 20px;
+                            padding-top: 30px;
+                            border-bottom: 1px solid #f2f2f2;
+                            @include breakpoint(tablet){
+                                padding-right: 10px;
+                            }
+                            a{
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            .info-product{
+                                p{
+                                    color: grey;
+                                    cursor: pointer;
+                                    @include breakpoint(phone){
+                                        font-size: 12px;
+                                    }
+                                }
+                                .name-product{
+                                    margin-bottom: 10px;
+                                    a{
+                                        text-decoration: none;
+                                        color: black;
+                                        @include breakpoint(phone){
+                                            font-size: 14px;
+                                        }
+                                    }
+        
+                                }
+                                .choose-size{
+                                    margin-bottom: 10px;
+                                    position: relative;
+                                    @include breakpoint(tablet){
+                                        position: static;
+                                    }
+                                    .chooseSize-drop{
+                                        visibility: hidden;
+                                        opacity: 0;
+                                        transition: all 0.3s;
+                                        width: 600px;
+                                        min-height: 200px;
+                                        background: #fff;
+                                        position: absolute;
+                                        top: 30px;
+                                        left: -1px;
+                                        z-index: 5;
+                                        box-shadow: 0px 0px 10px -5px #818181;
+                                        border: 1px solid #eee;
+                                        padding: 20px;
+                                        @include breakpoint(tablet){
+                                            width: 100%;
+                                            
+                                        }
+                                        .info-production{
+                                            .option-product{
+                                                p{
+                                                    margin-bottom: 1rem;
+                                                    color: black;
+                                                }
+                                                .image-tiny{
+                                                    margin-bottom: 10px;
+                                                    ul{
+                                                        display: flex;
+                                                        gap: 10px;
+                                                        align-items: center;
+                                                        flex-wrap: wrap;
+                                                        padding: 0;
+                                                        li{
+                                                            width: 50px;
+                                                            height: 50px;
+                                                            list-style: none;
+                                                            margin: 0;
+                                                            cursor: pointer;
+                                                            img{
+                                                                width: 100%;
+                                                                object-fit: cover;
+                                                            }
+                                                        }
+                                                        li.active img{
+                                                            border-bottom: 2px solid black;
+                                                        }
+                                                    }
+                                                }
+                                                .sizes{
+                                                    ul{
+                                                        display: flex;
+                                                        padding: 0;
+                                                        align-items: center;
+                                                        gap: 10px;
+                                                        flex-wrap: wrap;
+                                                        li{
+                                                            list-style: none;
+                                                            margin: 0;
+                                                            padding: 8px;
+                                                            background: #f4f4f4;
+                                                        }
+                                                        li.active{
+                                                            background: black;
+                                                            color: white;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .option-size{
+                                                p{
+                                                    margin-bottom: 1rem;
+                                                    color: black;
+                                                }
+                                                .sizes{
+                                                    ul{
+                                                        display: flex;
+                                                        padding: 0;
+                                                        align-items: center;
+                                                        gap: 10px;
+                                                        li{
+                                                            list-style: none;
+                                                            margin: 0;
+                                                            padding: 8px;
+                                                            background: #f4f4f4;
+                                                            cursor: pointer;
+                                                        }
+                                                        li.active{
+                                                            background: black;
+                                                            color: white;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .button-area{
+                                                margin-top: 30px;
+                                                text-align: right;
+                                                button{
+                                                    padding: 6px 12px;
+                                                    min-width: 150px;
+                                                    font-size: 16px;
+                                                    cursor: pointer;
+                                                }
+                                                .closePopup{
+                                                    background: white;
+                                                    border: 1px solid black;
+                                                }
+                                                .edit-confirm{
+                                                    background: black;
+                                                    color: white;
+                                                    border: 1px solid black;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .quantity{
+                                    margin-bottom: 10px;
+                                    display: flex;
+                                    button{
+                                        padding: 10px 15px;
+                                        border: 1px solid black;
+                                        background: white;
+                                        margin: 0;
+                                        cursor: pointer;
+                                        transition: all 0.3s;
+                                        @include breakpoint(phone){
+                                            padding: 5px 10px;
+                                        }
+                                        i{
+                                            font-size: 16px;
+                                        }
+                                    }
+                                    button:hover{
+                                        background: black;
+                                    }
+                                    button:hover i{
+                                        color: white;
+                                    }
+                                    input{
+                                        padding: 10px 15px;
+                                        width: 50px;
+                                        text-align: center;
+                                        border-top: 1px solid black;
+                                        border-bottom: 1px solid black;
+                                        margin: 0;
+                                        border-left: none;
+                                        border-right: none;
+                                        @include breakpoint(phone){
+                                            padding: 5px 10px;
+                                            width: 35px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .image-product{
+                            width: 250px;
+                            @include breakpoint(tablet){
+                                width: 150px;
+                                font-size: 14px;
+                            }
+                        }
+                        .price-product{
+                            width: 150px;
+                            text-align: right;
+                            @include breakpoint(tablet){
+                                width: 50px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            .right{
+                width: 20%;
+                @include breakpoint(desktop){
+                    width: 30%;
+                }
+                @include breakpoint(tablet){
+                    width: 100%;
+                    margin-top: 30px;
+                }
+                .order-price{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 30px;
+                    h4{
+                        margin: 0;
+                    }
+                    span{
+                        margin: 0;
+                    }
+                }
+                button{
+                    width: 100%;
+                    background: black;
+                    border: none;
+                    padding: 15px;
+                    color: white;
+                    font-size: 16px;
+                    cursor: pointer;
+                    margin-bottom: 30px;
+                    @include breakpoint(desktop){
+                        font-size: 14px;
+                    }
+                }
+                p{
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+                    @include breakpoint(desktop){
+                        font-size: 14px;
+                    }
+                }
+                span{
+                    cursor: pointer;
+                    font-weight: 500;
+                    transition: all 0.3s;
+                    font-size: 18px;
+                    @include breakpoint(desktop){
+                        font-size: 16px;
+                    }
+                }
+                span.login:hover{
+                    color: #0d6efd;
+                }
+                span.register{
+                    color: #DC3545;
+                }
+                span.register:hover{
+                    color: #0d6efd;
+                }
+            }
+        }
+    }
+//section3
+    .cart-3{
+        padding: 50px 0;
+        .heading{
+            h3{
+                font-size: 24px;
+            }
+        }
+        .cards-carousel{
+            margin-top: 40px;
+            // display: flex;
+            position: relative;
+            width: 100%;
+            @include breakpoint(tablet){
+                // flex-direction: column;
+            }
+            .card{
+                cursor: pointer;
+                // width: 25%;
+                margin: 0 20px;
+                position: relative;
+                @include breakpoint(tablet){
+                    
+                }
+                a{
+                    position: relative;
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                    img{
+                        width: 100%;
+                        transition: all 0.5s;
+                    }
+                }
+                a > img{
+                    opacity: 1;
+                }
+                a > img + img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                h4{
+                    margin-top: 20px;
+                    margin-bottom: 15px;
+                    font-weight: 500;
+                    @include breakpoint(desktop){
+                        font-size: 16px;
+                    }
+                    @include breakpoint(phone){
+                        font-size: 14px;
+                    }
+                    
+                }
+                .price{
+                    display: flex;
+                    margin-bottom: 15px;
+                    h3{
+                        margin-left: 0;
+                        @include breakpoint(desktop){
+                            font-size: 14px;
+                        }
+                        @include breakpoint(phone){
+                            font-size: 12px;
+                        }
+                    }
+                    h3+h3{
+                        text-decoration: line-through;
+                        margin-right: 0;
+                    }
+                }
+                .vote{
+                    i{
+                        color: rgb(255, 184, 102);
+                        @include breakpoint(phone){
+                            
+                        }
+                    }
+                }
+                .sale-off{
+                    background: #FF710A;
+                    color: white;
+                    position: absolute;
+                    top: 0;
+                    left: 10%;
+                    padding: 40px 8px;
+                }
+            }
+            .card:hover a>img{
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.5s;
+            }
+            .card:hover a>img+img{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .owl-carousel{
+            .owl-nav{
+                display: block!important;
+                span{
+                    display: none;
+                }
+                .owl-prev{
+                    font-family: 'fontAwesome';                    
+                }
+                .owl-prev::before{
+                    content: "\f053";
+                    padding: 12px 15px;
+                    background: rgba(0,0,0,0.1);
+                    color: white;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 35%;
+                    left: 35px;
+                }
+                .owl-next{
+                    font-family: 'fontAwesome';
+                }
+                .owl-next::after{
+                    content: "\f054";
+                    padding: 12px 15px;
+                    background: rgba(0,0,0,0.1);
+                    color: white;
+                    color: white;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 35%;
+                    right: 35px;
+                }
+            }
+        }
+    }
+//section4
+    .cart-4{
+        padding: 50px 0;
+        @include breakpoint(tablet){
+            padding: 30px 0;
+        }
+        .information-group{
+            .row{
+                display: flex;
+                @include breakpoint(tablet){
+                    flex-direction: column;
+                }
+                .col-4{
+                    width: calc(100%/3);
+                    padding: 0 10px;
+                    @include breakpoint(tablet){
+                        width: 100%;
+                        padding: 10px 0;
+                    }
+                    .information-item{
+                        display: flex;
+                        min-height: 220px;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        background: #f4f4f4;
+                        padding: 80px 20px;
+                        img{
+                            width: 100%;
+                            height: 50px;
+                        }
+                        h4{
+                            margin: 10px 0;
+                        }
+                        span{
+                            color: #898989;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
