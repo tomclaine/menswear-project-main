@@ -11,12 +11,14 @@ let closeRegis = document.querySelector(".closeRegis");
 for(btnShowLogin of btnShowLogins){
     btnShowLogin.addEventListener("click",(e)=>{
     loginArea.style.transform = "translateX(0)";
+    registerArea.style.transform = "translateX(100%)";
     e.preventDefault();
     });
 }
 for(btnShowRegister of btnShowRegisters){
     btnShowRegister.addEventListener("click",(e)=>{
     registerArea.style.transform = "translateX(0)";
+    loginArea.style.transform = "translateX(100%)";
     e.preventDefault();
 });
 };

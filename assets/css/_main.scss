@@ -2180,5 +2180,275 @@ main{
             }
         }
     }
+
+//cart-1 page
+//section2
+    .cart-2-1{
+        padding: 50px 0;
+        @include breakpoint(tablet){
+            padding: 30px 0;
+        }
+        .row1{
+            display: flex;
+            padding: 0 100px;
+            @include breakpoint(desktop){
+                padding: 0 20px;
+            }
+            @include breakpoint(tablet){
+                flex-direction: column;
+                padding: 0;
+            }
+            .col-8{
+                width: calc(200%/3);
+                padding-right: 10px;
+                @include breakpoint(tablet){
+                    width: 100%;
+                }
+                .box-member{
+                    padding: 15px;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    margin-bottom: 20px;
+                    p{
+                        margin-bottom: 5px;
+                        font-size: 18px;
+                    }
+                    span{
+                        cursor: pointer;
+                        font-weight: 600;
+                    }
+                    span.register{
+                        color: #DC3545;
+                    }
+                    span:hover{
+                        color: #0d6efd;
+                    }
+                }
+                h3{
+                    font-size: 24px;
+                    margin: 15px 0;
+                    @include breakpoint(tablet){
+                        font-size: 18px;
+                    }
+                }
+                .label{
+                    margin-bottom: 15px;
+                    display: inline-block;
+                    font-weight: 500;
+                }
+                .form-checkout{
+                    .row2{
+                        display: flex;
+                        flex-wrap: wrap;
+                        .col-12{
+                            width: 100%;
+                        }
+                        input{
+                            width: 100%;
+                            font-size: 16px;
+                            min-height: 48px;
+                            padding: 6px 12px;
+                            border: 1px solid #ced4da;
+                            outline: none;
+                            border-radius: 5px;
+                        }
+                        textarea{
+                            height: 84px;
+                            width: 100%;
+                            outline: none;
+                            border: 1px solid #ced4da;
+                            padding: 6px 12px;
+                            border-radius: 5px;
+                            font-size: 16px;
+                        }
+                        .col-6{
+                            width: 50%;
+
+                        }
+                    }
+                    .row2>*{
+                        padding: 0 10px;
+                    }
+                    .form-group{
+                        margin-bottom: 15px;
+                    }
+                }
+                .input-radio{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 15px;
+                    padding: 0 10px;
+                    .radio-check{
+                        margin: 0 0 10px 0;
+                        input{
+                            transform: scale(1.5);
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            .col-4{
+                width: calc(100%/3);
+                padding-left: 2rem;
+                @include breakpoint(desktop){
+                    padding-left: 10px;
+                }
+                @include breakpoint(tablet){
+                    width: 100%;
+                    padding-left: 0;
+                }
+                .offer{
+                    margin-bottom: 30px;
+                    .heading{
+                        border-bottom: 2px solid black;
+                        padding-bottom: 15px;
+                    }
+                }
+                .discount-code{
+                    display: flex;
+                    margin-top: 20px;
+                    input{
+                        outline: none;
+                        border: 1px solid black;
+                        margin: 0;
+                        padding: 6px 12px;
+                        width: 80%;
+                        min-height: 50px;
+                        @include breakpoint(desktop){
+                            
+                        }
+                    }
+                    button{
+                        width: 20%;
+                        margin: 0;
+                        background: black;
+                        color: white;
+                        border: black;
+                        font-size: 16px;
+                        cursor: pointer;
+                        @include breakpoint(desktop){
+                            font-size: 14px;
+                            padding: 5px 10px;
+                            width: 40%;
+                        }
+                    }
+                }
+                .info-order{
+                    .heading{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 2px solid black;
+                        padding-bottom: 15px;
+                        h3{
+                            margin: 0;
+                            @include breakpoint(desktop){
+                                font-size: 14px;
+                                
+                            }
+                        }
+                        a{
+                            display: block;
+                            text-decoration: none;
+                            background: black;
+                            color: white;
+                            padding: 5px;
+                            border-radius: 3px;
+                            margin: 0;
+                            @include breakpoint(desktop){
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .list-items{
+                    .item{
+                        padding: 20px 0;
+                        display: flex;
+                        justify-content: space-between;
+                        position: relative;
+                        border-bottom: 1px solid #f3f3f3;
+                        // align-items: center;
+                        img{
+                            max-width: 75px;
+                            margin: 0;
+                            object-fit: cover;
+                            @include breakpoint(desktop){
+                                max-width: 50px;
+                            }
+                        }
+                        .info-product{
+                            margin: 0;
+                            h3{
+                                font-size: 14px;
+                                margin-bottom: 5px;
+                                
+                            }
+                            p{
+                                font-size: 13px;
+                                color: #7F828C;
+                            }
+                        }
+                        span{
+                            position: absolute;
+                            right: 0;
+                            bottom: 10px;
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .box-price{
+                    margin-top: 20px;
+                    .temporary{
+                        display: flex;
+                        padding: 10px 0;
+                        justify-content: space-between;
+                        border-bottom: 1px solid #f3f3f3;
+                    }
+                    .ship-fee{
+                        display: flex;
+                        padding: 10px 0;
+                        justify-content: space-between;
+                        border-bottom: 1px solid #f3f3f3;
+                    }
+                    .total-price{
+                        display: flex;
+                        padding: 10px 0;
+                        justify-content: space-between;
+                        border-bottom: 1px solid #f3f3f3;
+                        span{
+                            color: #DC3545;
+                            font-weight: 500;
+                        }
+                    }
+                    h3{
+                        margin: 0;
+                        font-size: 16px;
+                        @include breakpoint(desktop){
+                            font-size: 14px;
+                        }
+                    }
+                    span{
+                        margin: 0;
+                        font-size: 16px;
+                        @include breakpoint(desktop){
+                            font-size: 14px;
+                        }
+                    }
+                }
+                button{
+                    margin-top: 30px;
+                    width: 100%;
+                    background: black;
+                    color: white;
+                    border: none;
+                    height: 55px;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }
 

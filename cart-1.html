@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="icon" type="image/png" sizes="16x16"  href="./assets/images/favicon-16x16.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/lib/fontawesome-6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <header>
+        <div class="header_top">
+            <div class="container">
+                <div class="header_top-items">
+                    <ul>
+                        <li>
+                            <a href="tel:18001090">
+                                <span>
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </span>
+                                <span>
+                                    1800.1080
+                                </span> 
+                            </a>
+                            <span>|</span> 
+                            <a href="" class="login">
+                                <span>
+                                    Đăng nhập
+                                </span>
+                            </a>
+                            <span>/</span>
+                            <a href="" class="register">
+                                <span>
+                                    Đăng ký
+                                </span>
+                            </a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>           
+        </div>  
+        <div class="banner sticky">
+            <div class="container">
+                <div class="header_main">
+                    <div class="hamburger">
+                        <a href=""><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                    <div class="header_main-logo">
+                        <a href="./index.html">Menswear</a>
+                    </div>
+                    <div class="header_main-navbar">
+                        <ul>
+                            <li><a href="./index.html">Trang chủ</a></li>
+                            <li class="dropmenu">
+                                <a href="">Sản phẩm</a> <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="./product.html">Áo sơ mi</a>
+                                        <a href="./product.html">Áo Polo</a>
+                                        <a href="./product.html">Áo khoác</a>
+                                        <a href="./product.html">Quần âu</a>
+                                        <a href="./product.html">Quần jean</a>
+                                        <a href="./product.html">Quần short</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="./collection.html">Bộ sưu tập</a></li>
+                            <li><a href="./introduction.html">Giới thiệu</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_main-cart">
+                        <ul>
+                            <li>
+                                <a href="" class="show-search-area"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slogan">
+                    <p>Khẳng định đẳng cấp</p>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <h3>THỜI<br> TRANG<br> NAM<br> GIỚI</h3>
+                    <p>Giảm giá lên đến 50%</p>
+                </div>
+            </div>
+        </div>
+
+<!--Search-Area-->
+        <div class="searchTop-area">
+            <div class="searchTop">
+                <form action="" class="input-width-btn">
+                    <input type="text" id="keyword" class="form-control" placeholder="Tìm kiếm...">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+<!--Login-Area-->
+        <div class="login-area">
+            <h3>ĐĂNG NHẬP</h3>
+        <form action="">
+                <input type="text" placeholder="Nhập số điện thoại">
+                <input type="password" placeholder="Nhập mật khẩu">
+                <button type="submit">ĐĂNG NHẬP</button>
+            </form>
+            <p>Bạn chưa có tài khoản? <a href="" class="registerOnLog">Đăng ký</a></p>
+            <span class="closeLog"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+
+<!--Register-Area-->
+        <div class="register-area">
+            <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
+            <form action="">
+                <input type="text" placeholder="Họ và tên">
+                <input type="text" placeholder="Nhập số điện thoại">
+                <input type="password" placeholder="Nhập mật khẩu">
+                <button type="submit">ĐĂNG KÝ</button>
+            </form>
+            <p>Bạn chưa có tài khoản? <a href="" class="loginOnRegis">Đăng nhập</a></p>
+            <span class="closeRegis"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+
+<!--Menu-mobile-->
+        <div class="menu-mobile-area">
+            <div class="menu-mobile">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="./index.html">Trang chủ</a></li>
+                    <li class="dropmenu-mobile">
+                        <a href="">Sản phẩm <i class="fa-solid fa-chevron-down icon-change"></i></a>
+                        <ul class="sub-menu-mobile">
+                            <li><a href="./product.html">Áo sơ mi</a></li>
+                            <li><a href="./product.html">Áo Polo</a></li>
+                            <li><a href="./product.html">Áo khoác</a></li>
+                            <li><a href="./product.html">Quần âu</a></li>
+                            <li><a href="./product.html">Quần jean</a></li>
+                            <li><a href="./product.html">Quần short</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./collection.html">Bộ sưu tập</a></li>
+                    <li><a href="./introduction.html">Giới thiệu</a></li>
+                    <li><a href="" class="login">
+                        <i class="fa-solid fa-user"></i><span>
+                            Đăng nhập
+                        </span>
+                    </a></li>
+                    <li><a href="tel:18001080"><i class="fa-solid fa-phone"></i> 1800.1080</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="cart-1">
+            <div class="container">
+                <div class="status-cart">
+                    <div class="status status-1">
+                        <i class="fa-solid fa-check"></i>
+                        <h3>Giỏ hàng</h3>
+                    </div>
+                    <div class="crossbar"></div>
+                    <div class="status status-2">
+                        <i class="fa-solid fa-check"></i>
+                        <h3>Đặt hàng</h3>
+                    </div>
+                    <div class="crossbar"></div>
+                    <div class="status status-3">
+                        <h3>Thành công</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cart-2-1">
+            <form action="">
+                <div class="container">   
+                    <div class="row1">
+                        <div class="col-8">
+                            <div class="box-member">
+                                <p>
+                                    <strong>ƯU ĐÃI HỘI VIÊN</strong>
+                                </p>
+                                <p>Tích điểm đổi quà và rất nhiều ưu đãi đặc biệt khác, chỉ dành cho hội viên của Aristino.</p>
+                                <span class="login">Đăng nhập</span> / <span class="register">Đăng ký hội viên</span>
+                            </div>
+                            <h3>GIAO HÀNG VÀ THANH TOÁN</h3>
+                            <div class="form-checkout">
+                                <label class="label">Thông tin giao hàng</label>
+                                <div class="row2">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Họ và tên người nhận *">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Số điện thoại người nhận *">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Email nhận thông tin đơn hàng">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Địa chỉ cụ thể: Số nhà, tên đường, Phường/Xã... *">
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="label">Ghi chú</label>
+                                <div class="row2">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea placeholder="Bạn có muốn nhắn gì tới chúng tôi không?"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="label">Chọn hình thức thanh toán</label>
+                                <div class="input-radio">
+                                    <div class="radio-check">
+                                        <input type="radio" name="payment"><label for="">Thanh toán trực tiếp</label>
+                                    </div>
+                                    <div class="radio-check">
+                                        <input type="radio" name="payment"><label for="">Thanh toán chuyển khoản</label>
+                                    </div>
+                                </div>       
+                                <label class="label">Chọn phương thức giao hàng</label>
+                                <div class="input-radio">
+                                    <div class="radio-check">
+                                        <input type="radio" name="ship"><label for="">Giao hàng tiêu chuẩn</label>
+                                    </div>
+                                    <div class="radio-check">
+                                        <input type="radio" name="ship"><label for="">Miễn phí vận chuyển</label>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="offer">
+                                <div class="heading">
+                                    <h3>Ưu đãi của bạn</h3>
+                                </div>
+                                <div class="discount-code">
+                                    <input type="text" placeholder="Nhập mã giảm giá">
+                                    <button>Áp dụng</button>
+                                </div>
+                            </div>
+                            <div class="info-order">
+                                <div class="heading">
+                                    <h3>ĐƠN HÀNG</h3>
+                                    <a href="./cart.html">Sửa</a>
+                                </div>
+                            </div>
+                            <div class="list-items">
+                                <div class="item">
+                                    <img src="./assets/images/_TC_2514x500x500x4.webp" alt="">
+                                    <div class="info-product">
+                                        <h3>Áo sơ mi trắng họa tiết ngắn tay</h3>
+                                        <p>Màu: Trắng</p>
+                                        <p>Size: 43</p>
+                                        <p>Số lượng: 1</p>
+                                    </div>
+                                    <span>950.000đ</span>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/images/_TC_5496x500x500x4.webp" alt="">
+                                    <div class="info-product">
+                                        <h3>Áo Polo nam có cổ ngắn tay</h3>
+                                        <p>Màu: Xanh</p>
+                                        <p>Size: XL</p>
+                                        <p>Số lượng: 1</p>
+                                    </div>
+                                    <span>550.000đ</span>
+                                </div>
+                            </div>
+                            <div class="box-price">
+                                <div class="temporary">
+                                    <h3>Tạm tính: </h3>
+                                    <span>1.500.000đ</span>
+                                </div>
+                                <div class="ship-fee">
+                                    <h3>Phí vận chuyển: </h3>
+                                    <span>0đ</span>
+                                </div>
+                                <div class="total-price">
+                                    <h3>Thành tiền: </h3>
+                                    <span>1.500.000đ</span>
+                                </div>
+                            </div>
+                            <button class="confirm-order">
+                                Xác nhận đặt hàng
+                            </button>
+                        </div>
+                    </div>
+                </div>   
+            </form>  
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="col-1">
+                    <div class="contact">
+                        <h3>LIÊN HỆ</h3>
+                        <p>Địa chỉ: tầng 12A, Viwaseen Tower, 48 Tố Hữu</p>
+                        <p>Số điện thoại: <a href="tel:0945678432">09xxxxxxxx</a></p>
+                        <p>Email: <a href="mailto:mail@gmail.com">mail@gmail.com</a></p>
+                    </div>
+                    <div class="footer_main-logo">
+                        <a href="">Menswear</a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h3>DANH SÁCH SẢN PHẨM</h3>
+                    <ul>
+                        <li><a href="">Áo sơmi</a></li>
+                        <li><a href="">Áo Polo</a></li>
+                        <li><a href="">Áo khoác</a></li>
+                        <li><a href="">Quần âu</a></li>
+                        <li><a href="">Quần jean</a></li>
+                        <li><a href="">Quần short</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <div class="form-mail">
+                        <h3>THEO DÕI BẢN TIN CỦA CHÚNG TÔI</h3>
+                        <input type="text" placeholder="Nhập email của bạn..."><button>Đăng ký</button>
+                    </div>
+                    <div class="connect">
+                        <h3>Kết nối với chúng tôi</h3>
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-google"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="payment-methods">
+                        <h3>Phương thức thanh toán</h3>
+                        <img src="./assets/images/payment.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="call-to-action-btns">
+        <div class="back-top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <div class="messenger">
+            <a href="https://www.facebook.com/messages/t/100008083723874/"><img src="./assets/images/facebook_mesenger.svg" alt=""></a>
+        </div>
+        <div class="zalo">
+            <a href="https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F"><img src="./assets/images/Logo.svg" alt=""></a>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+    <script src="/assets/js/cartJS.js"></script>
+    <script src="./assets/jquery-3.6.4.min.js"></script>
+    <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-one").owlCarousel(
+                {
+                loop:true,
+                items:4,
+                autoplay:true,
+                autoplayTimeout: 5000,
+                responsiveClass:true,
+                autoplayHoverPause:true,
+                smartSpeed:1000,
+                responsive:{
+                    360: {
+                        items:1
+                    },
+                    768:{
+                        items:2
+                    },
+                    1366:{
+                        items:4
+                    }
+                }
+            }); 
+            $(".owl-two").owlCarousel(
+                {
+                loop:true,
+                items:1,
+                autoplay:true,
+                autoplayTimeout: 10000,
+                responsiveClass:true,
+                autoplayHoverPause:true,
+                smartSpeed:1000,
+            });   
+        });
+    </script>
+</body>
+</html>
