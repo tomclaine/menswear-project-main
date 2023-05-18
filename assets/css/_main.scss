@@ -2450,5 +2450,39 @@ main{
             }
         }
     }
+
+//cart-2 page
+//section2
+    .cart-2-2{
+        padding: 50px 0;
+        text-align: center;
+        h3{
+            font-size: 45px;
+            margin-bottom: 20px;
+            @include breakpoint(tablet){
+                font-size: 30px;
+            }
+        }
+        p{
+            margin-bottom: 20px;
+            font-size: 18px;
+            @include breakpoint(tablet){
+                font-size: 16px;
+            }
+        }
+        .line{
+            height: 1px;
+            background: black;
+            max-width: 300px;
+            margin-bottom: 50px;
+        }
+        a{
+            background: black;
+            text-decoration: none;
+            color: white;
+            padding: 10px 50px;
+            display: inline-block;
+        }
+    }
 }
 
