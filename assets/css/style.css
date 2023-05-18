@@ -3129,6 +3129,50 @@ main .cart-2-2 a {
   padding: 10px 50px;
   display: inline-block;
 }
+main .product-detail-1 {
+  padding: 50px 0;
+}
+@media (max-width: 420px) {
+  main .product-detail-1 {
+    padding: 30px 0;
+  }
+}
+main .product-detail-1 .info-area {
+  display: flex;
+  padding: 0 100px;
+}
+main .product-detail-1 .info-area .slide-image {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+main .product-detail-1 .info-area .slide-image .img-small img {
+  max-height: 150px;
+  margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: block;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+main .product-detail-1 .info-area .slide-image .img-small img:hover {
+  opacity: 1;
+}
+main .product-detail-1 .info-area .slide-image .img-big img {
+  width: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .product-detail-1 .info-area .slide-image .magnifying {
+  border: 1px solid black;
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
 
 footer {
   background: black;
