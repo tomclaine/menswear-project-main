@@ -72,7 +72,7 @@ menuMobile.addEventListener('click',(e)=>{
 });
 
 //hide/show sub menu mobile
-let dropMenuMobile = document.querySelector(".dropmenu-mobile");
+let dropMenuMobile = document.querySelector(".btn-dropmenu");
 let subMenuMobile = document.querySelector(".sub-menu-mobile");
 dropMenuMobile.addEventListener("click",(e)=>{
     if(subMenuMobile.style.display == "block"){

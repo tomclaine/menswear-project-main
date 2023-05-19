@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="./lib/fontawesome-6.4.0/css/fontawesome.min.css">
     <link rel="stylesheet" href="/lib/fontawesome-6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./assets/slick/slick.css">
-    <link rel="stylesheet" href="./assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css">
 </head>
 <body>
     <div class="preload"></div>
@@ -79,7 +79,7 @@
                             <li>
                                 <a href="" class="show-search-area"><i class="fa-solid fa-magnifying-glass"></i></a>
                             </li>
-                            <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                 <ul>
                     <li><a href="./index.html">Trang chủ</a></li>
                     <li class="dropmenu-mobile">
-                        <a href="">Sản phẩm <i class="fa-solid fa-chevron-down icon-change"></i></a>
+                        <a href="" class="btn-dropmenu">Sản phẩm <i class="fa-solid fa-chevron-down icon-change"></i></a>
                         <ul class="sub-menu-mobile">
                             <li><a href="./product.html">Áo sơ mi</a></li>
                             <li><a href="./product.html">Áo Polo</a></li>
@@ -166,26 +166,175 @@
                             <img src="./assets/images/NTC_2801x900x900x4.webp" alt="" onclick="myFunction(this)">
                             <img src="./assets/images/NTC_2813x900x900x4.webp" alt="" onclick="myFunction(this)">
                             <img src="./assets/images/NTC_2815x900x900x4.webp" alt="" onclick="myFunction(this)">
+                            <img src="./assets/images/NTC_2812x900x900x4.webp" alt="" onclick="myFunction(this)">
                         </div>
                         <div class="img-big">
                             <img src="./assets/images/NTC_2808x900x900x4.webp" alt="" class="imgBox">
+                            <div class="magnifying"></div>
+                            <div class="hide"></div>
                         </div>
-                        <div class="magnifying">HIHI</div>
                     </div>
-                    <div class="info-product"></div>
+                    <div class="info-product">
+                        <h3>Áo sơ mi trắng dài tay họa tiết</h3>
+                        <h3>850.000đ</h3>
+                        <p>Trắng in chữ</p>
+                        <img src="./assets/images/NTC_2808x50x50x4.webp" alt="">
+                        <p>Chọn size <span>(Hướng dẫn chọn size)</span></p>
+                        <ul>
+                            <li>38</li>
+                            <li>39</li>
+                            <li>40</li>
+                            <li>41</li>
+                            <li>42</li>
+                            <li>43</li>
+                        </ul>
+                        <p>Số lượng</p>
+                        <div class="input-group">
+                            <span><i class="fa-solid fa-minus"></i></span><input type="text"><span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <div class="button-area">
+                            <a href="#"><i class="fa fa-cart-shopping"></i> Thêm vào giỏ hàng</a>
+                            <a href="./cart.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <p><i class="fa fa-credit-card"></i>Đa dạng phương thức thanh toán</p>
+                        <p><i class="fa fa-shuffle"></i>Đổi hàng miễn phí lên đến 30 ngày</p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="product-detail-2">
             <div class="container">
-                <div class="heading">
-                    <h3>Danh mục nổi bật</h3>
-                </div>
-                
+                <h3>Thông tin sản phẩm</h3>
                 <hr>
+                <p>FORM DÁNG: Slim fit<br>
+                    THIẾT KẾ:<br>
+                    - Áo sơ mi dài tay phom Slim Fit ôm nhẹ vừa vặn mà vẫn thoải mái vận động<br>
+                    - Áo thiết kế đơn giản, tà lượn không túi, gam màu trắng đơn giản nhưng tinh tế, ấn tượng khi in họa tiết chữ cái tự hào thương hiệu, mang đến phong cách thời thượng và lịch lãm cho các quý ông.<br>
+                    <br>
+                    CHẤT LIỆU:<br>
+                    - 50% Bamboo, 50% Polyester<br><br>
+                    MÀU SẮC: Trắng in chữ<br><br>
+                    SIZE: 38/39/40/41/42/43
+                </p>
             </div>
         </section>
-
+        <section class="product-detail-3">
+            <div class="container">
+                <div class="heading">
+                    <h3>Có thể bạn sẽ thích</h3>
+                </div>
+                <div class="cards-carousel owl-one owl-carousel">
+                    <div class="card">
+                        <a href="./product-detail.html">
+                            <img src="./assets/images/_TC_4982x500x500x4.webp" alt="">
+                            <img src="./assets/images/_TC_4984x500x500x4.webp" alt="">
+                        </a>
+                        <h4 class="name-product">
+                            <a href="./product-detail.html">Áo sơ mi kẻ xanh ngắn tay</a>
+                        </h4>
+                        <div class="price">
+                            <h3 class="price-new">600.000đ</h3>
+                        </div>
+                        <div class="vote">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-regular fa-star-half-stroke"></i></i>
+                        </div>
+                        <div class="sale-off">
+                            <span>NEW</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="./product-detail.html">
+                            <img src="./assets/images/_TC_5015x500x500x4.webp" alt="">
+                            <img src="./assets/images/_TC_5018x500x500x4.webp" alt="">
+                        </a>
+                        <h4 class="name-product">
+                            <a href="./product-detail.html">Áo sơ mi kẻ xám ngắn tay</a>
+                        </h4>
+                        <div class="price">
+                            <h3 class="price-new">350.000đ</h3>
+                        </div>
+                        <div class="vote">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></i>
+                        </div>
+                        <div class="sale-off">
+                            <span>NEW</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="./product-detail.html">
+                            <img src="./assets/images/NTC_0749x500x500x4.webp" alt="">
+                            <img src="./assets/images/NTC_0750x500x500x4.webp" alt="">
+                        </a>
+                        <h4 class="name-product">
+                            <a href="./product-detail.html">Áo sơ mi trắng ngắn tay</a>
+                        </h4>
+                        <div class="price">
+                            <h3 class="price-new">550.000đ</h3>
+                        </div>
+                        <div class="vote">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="sale-off">
+                            <span>NEW</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="./product-detail.html">
+                            <img src="./assets/images/NTC_7451x500x500x4.webp" alt="">
+                            <img src="./assets/images/NTC_7454x500x500x4.webp" alt="">
+                        </a>
+                        <h4 class="name-product">
+                            <a href="./product-detail.html">Áo sơ mi xanh ngắn tay</a>
+                        </h4>
+                        <div class="price">
+                            <h3 class="price-new">600.000đ</h3>
+                        </div>
+                        <div class="vote">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="sale-off">
+                            <span>NEW</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="./product-detail.html">
+                            <img src="./assets/images/_TC_2514x500x500x4.webp" alt="">
+                            <img src="./assets/images/_TC_2516x500x500x4.webp" alt="">
+                        </a>
+                        <h4 class="name-product">
+                            <a href="./product-detail.html">Áo sơ mi họa tiết ngắn tay</a>
+                        </h4>
+                        <div class="price">
+                            <h3 class="price-new">500.000đ</h3>
+                        </div>
+                        <div class="vote">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="sale-off">
+                            <span>NEW</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="./product-detail.html">
+                            <img src="./assets/images/_TC_9431x500x500x4.webp" alt="">
+                            <img src="./assets/images/_TC_9181x500x500x4.webp" alt="">
+                        </a>
+                        <h4 class="name-product">
+                            <a href="./product-detail.html">Áo thun có cổ ngắn tay</a>
+                        </h4>
+                        <div class="price">
+                            <h3 class="price-new">450.000đ</h3>
+                        </div>
+                        <div class="vote">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="sale-off">
+                            <span>NEW</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
@@ -198,18 +347,18 @@
                         <p>Email: <a href="mailto:mail@gmail.com">mail@gmail.com</a></p>
                     </div>
                     <div class="footer_main-logo">
-                        <a href="">Menswear</a>
+                        <a href="./index.html">Menswear</a>
                     </div>
                 </div>
                 <div class="col-2">
                     <h3>DANH SÁCH SẢN PHẨM</h3>
                     <ul>
-                        <li><a href="">Áo sơmi</a></li>
-                        <li><a href="">Áo Polo</a></li>
-                        <li><a href="">Áo khoác</a></li>
-                        <li><a href="">Quần âu</a></li>
-                        <li><a href="">Quần jean</a></li>
-                        <li><a href="">Quần short</a></li>
+                        <li><a href="./product.html">Áo sơmi</a></li>
+                        <li><a href="./product.html">Áo Polo</a></li>
+                        <li><a href="./product.html">Áo khoác</a></li>
+                        <li><a href="./product.html">Quần âu</a></li>
+                        <li><a href="./product.html">Quần jean</a></li>
+                        <li><a href="./product.html">Quần short</a></li>
                     </ul>
                 </div>
                 <div class="col-3">
@@ -220,11 +369,11 @@
                     <div class="connect">
                         <h3>Kết nối với chúng tôi</h3>
                         <ul>
-                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-google"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                         </ul>
                     </div>
                     <div class="payment-methods">
@@ -253,6 +402,7 @@
     <script src="/assets/js/main.js"></script>
     <script src="./assets/js/productDetail.js"></script>
     <script src="./assets/jquery-3.6.4.min.js"></script>
+    <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
     <script>
         function myFunction(smallImg){
             let fullImg = document.querySelector(".imgBox");
@@ -262,6 +412,29 @@
         window.addEventListener("load",()=>{
             preloader.style.display = "none";
         })
+        $(document).ready(function(){
+            $(".owl-one").owlCarousel(
+                {
+                loop:true,
+                items:3,
+                autoplay:true,
+                autoplayTimeout: 5000,
+                responsiveClass:true,
+                autoplayHoverPause:true,
+                smartSpeed:1000,
+                responsive:{
+                    360: {
+                        items:1
+                    },
+                    768:{
+                        items:2
+                    },
+                    1366:{
+                        items:3
+                    }
+                }
+            });   
+        });
     </script>
 </body>
 </html>
