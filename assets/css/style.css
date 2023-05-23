@@ -1844,22 +1844,20 @@ main .product-1 .pagination ul {
 main .product-1 .pagination ul li {
   margin: 0;
   list-style: none;
-}
-main .product-1 .pagination ul li a {
   text-decoration: none;
   color: black;
   display: block;
   padding: 8px 15px;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
-  main .product-1 .pagination ul li a {
+  main .product-1 .pagination ul li {
     font-size: 14px;
   }
 }
-main .product-1 .pagination ul li:nth-child(3) a {
+main .product-1 .pagination ul .active {
   background: black;
   color: white;
-  padding: 8px 15px;
   border-radius: 3px;
 }
 main .product-2 {

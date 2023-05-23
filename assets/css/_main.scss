@@ -1241,24 +1241,28 @@ main{
                 li{
                     margin: 0;
                     list-style: none;
-                    a{
-                        text-decoration: none;
-                        color: black;
-                        display: block;
-                        padding: 8px 15px;
-                        @include breakpoint(tablet){
-                            font-size: 14px;
-                        }
+                    text-decoration: none;
+                    color: black;
+                    display: block;
+                    padding: 8px 15px;
+                    cursor: pointer;
+                    @include breakpoint(tablet){
+                        font-size: 14px;
                     }
                 }
-                li:nth-child(3){
-                    a{
-                        background: black;
-                        color: white;
-                        padding: 8px 15px;
-                        border-radius: 3px;
-                    }   
+                .active{
+                    background: black;
+                    color: white;
+                    border-radius: 3px;
                 }
+                // li:nth-child(3){
+                //     a{
+                //         background: black;
+                //         color: white;
+                //         padding: 8px 15px;
+                //         border-radius: 3px;
+                //     }   
+                // }
             }
         }
     }

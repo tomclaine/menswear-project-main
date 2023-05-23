@@ -17,3 +17,9 @@ img.addEventListener('mousemove',function(e){
 img.addEventListener('mouseleave',()=> {
     result.classList.add('hide');
 })
+
+let alertCart = document.querySelector(".add-cart");
+alertCart.addEventListener("click",function(e){
+    alert("Bạn đã thêm sản phẩm vào giỏ hàng thành công!");
+    e.preventDefault();
+})
