@@ -46,7 +46,7 @@
     background-attachment: fixed;
     position: relative;
     @include breakpoint(tablet){
-        height: 100vh;
+        height: 80vh;
         // background: white;
         box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     }
