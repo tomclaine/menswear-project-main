@@ -254,6 +254,8 @@
   color: white;
   border: 8px solid white;
   position: absolute;
+  min-width: 400px;
+  min-height: 500px;
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
@@ -262,6 +264,8 @@
 }
 @media (max-width: 768px) {
   .slogan {
+    min-width: 250px;
+    min-height: 300px;
     border: 5px solid white;
     padding: 20px;
   }
@@ -270,6 +274,7 @@
   .slogan {
     border: 3px solid white;
     padding: 10px;
+    min-width: 250px;
   }
 }
 .slogan p {
@@ -291,12 +296,7 @@
 }
 @media (max-width: 768px) {
   .slogan h3 {
-    font-size: 25px;
-  }
-}
-@media (max-width: 420px) {
-  .slogan h3 {
-    font-size: 20px;
+    font-size: 35px;
   }
 }
 .slogan i {
