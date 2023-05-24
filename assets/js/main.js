@@ -102,14 +102,7 @@ backTop.addEventListener("click",()=>{
 
 
 
-//scroll window
-let headings = document.querySelectorAll(".heading");
-function scrolled(){
-    for(heading of headings){
-        heading.classList.add('animate__animated', 'animate__backInLeft');
-    }
-}
-window.onscroll = scrolled;
+
 
 
 
