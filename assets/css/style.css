@@ -3338,6 +3338,8 @@ main .product-detail-1 .info-area .info-product .input-group input {
   margin: 0;
   width: 50px;
   height: 40px;
+  text-align: center;
+  font-size: 15px;
 }
 main .product-detail-1 .info-area .info-product .button-area {
   margin-bottom: 30px;
