@@ -89,7 +89,7 @@
 }
 @media (max-width: 768px) {
   .banner {
-    height: 80vh;
+    height: 100vh;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   }
 }
@@ -254,8 +254,6 @@
   color: white;
   border: 8px solid white;
   position: absolute;
-  min-width: 400px;
-  min-height: 500px;
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
@@ -264,8 +262,6 @@
 }
 @media (max-width: 768px) {
   .slogan {
-    min-width: 300px;
-    min-height: 300px;
     border: 5px solid white;
     padding: 20px;
   }
@@ -274,7 +270,6 @@
   .slogan {
     border: 3px solid white;
     padding: 10px;
-    min-width: 250px;
   }
 }
 .slogan p {
@@ -282,12 +277,12 @@
 }
 @media (max-width: 768px) {
   .slogan p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 420px) {
   .slogan p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .slogan h3 {
@@ -296,12 +291,12 @@
 }
 @media (max-width: 768px) {
   .slogan h3 {
-    font-size: 45px;
+    font-size: 25px;
   }
 }
 @media (max-width: 420px) {
   .slogan h3 {
-    font-size: 35px;
+    font-size: 20px;
   }
 }
 .slogan i {
@@ -1007,6 +1002,11 @@ main .promotion-products .owl-carousel .owl-nav .owl-prev::before {
   top: 35%;
   left: 35px;
 }
+@media (max-width: 420px) {
+  main .promotion-products .owl-carousel .owl-nav .owl-prev::before {
+    display: none;
+  }
+}
 main .promotion-products .owl-carousel .owl-nav .owl-next {
   font-family: "fontAwesome";
 }
@@ -1020,6 +1020,11 @@ main .promotion-products .owl-carousel .owl-nav .owl-next::after {
   position: absolute;
   top: 35%;
   right: 35px;
+}
+@media (max-width: 420px) {
+  main .promotion-products .owl-carousel .owl-nav .owl-next::after {
+    display: none;
+  }
 }
 main .feedback-area {
   background-image: url(../images/he-thong-cua-hang.jpg);
@@ -1105,7 +1110,7 @@ main .feedback-area .owl-carousel .owl-nav .owl-prev::before {
 }
 @media (max-width: 420px) {
   main .feedback-area .owl-carousel .owl-nav .owl-prev::before {
-    left: 0;
+    display: none;
   }
 }
 main .feedback-area .owl-carousel .owl-nav .owl-next {
@@ -1124,7 +1129,7 @@ main .feedback-area .owl-carousel .owl-nav .owl-next::after {
 }
 @media (max-width: 420px) {
   main .feedback-area .owl-carousel .owl-nav .owl-next::after {
-    right: 0;
+    display: none;
   }
 }
 main .new-products {
@@ -1271,6 +1276,11 @@ main .new-products .owl-carousel .owl-nav .owl-prev::before {
   top: 35%;
   left: 35px;
 }
+@media (max-width: 420px) {
+  main .new-products .owl-carousel .owl-nav .owl-prev::before {
+    display: none;
+  }
+}
 main .new-products .owl-carousel .owl-nav .owl-next {
   font-family: "fontAwesome";
 }
@@ -1283,6 +1293,11 @@ main .new-products .owl-carousel .owl-nav .owl-next::after {
   position: absolute;
   top: 35%;
   right: 35px;
+}
+@media (max-width: 420px) {
+  main .new-products .owl-carousel .owl-nav .owl-next::after {
+    display: none;
+  }
 }
 main .collection-1 {
   padding: 50px 0;
@@ -1558,6 +1573,11 @@ main .collection-3 .owl-carousel .owl-nav .owl-prev::before {
   top: 35%;
   left: 35px;
 }
+@media (max-width: 420px) {
+  main .collection-3 .owl-carousel .owl-nav .owl-prev::before {
+    display: none;
+  }
+}
 main .collection-3 .owl-carousel .owl-nav .owl-next {
   font-family: "fontAwesome";
 }
@@ -1571,6 +1591,11 @@ main .collection-3 .owl-carousel .owl-nav .owl-next::after {
   position: absolute;
   top: 35%;
   right: 35px;
+}
+@media (max-width: 420px) {
+  main .collection-3 .owl-carousel .owl-nav .owl-next::after {
+    display: none;
+  }
 }
 main .collection-4 {
   padding: 50px 0;
@@ -1852,7 +1877,7 @@ main .product-1 .pagination ul li {
 }
 @media (max-width: 768px) {
   main .product-1 .pagination ul li {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 main .product-1 .pagination ul .active {
@@ -1944,6 +1969,11 @@ main .product-2 .owl-carousel .owl-nav .owl-prev::before {
   transform: translateY(-50%);
   left: 25px;
 }
+@media (max-width: 420px) {
+  main .product-2 .owl-carousel .owl-nav .owl-prev::before {
+    display: none;
+  }
+}
 main .product-2 .owl-carousel .owl-nav .owl-next {
   font-family: "fontAwesome";
 }
@@ -1958,6 +1988,11 @@ main .product-2 .owl-carousel .owl-nav .owl-next::after {
   top: 47%;
   transform: translateY(-50%);
   right: 25px;
+}
+@media (max-width: 420px) {
+  main .product-2 .owl-carousel .owl-nav .owl-next::after {
+    display: none;
+  }
 }
 main .filter-area {
   box-shadow: 0px 0px 10px -5px #818181;
@@ -2754,6 +2789,11 @@ main .cart-3 .owl-carousel .owl-nav .owl-prev::before {
   top: 35%;
   left: 35px;
 }
+@media (max-width: 420px) {
+  main .cart-3 .owl-carousel .owl-nav .owl-prev::before {
+    display: none;
+  }
+}
 main .cart-3 .owl-carousel .owl-nav .owl-next {
   font-family: "fontAwesome";
 }
@@ -2767,6 +2807,11 @@ main .cart-3 .owl-carousel .owl-nav .owl-next::after {
   position: absolute;
   top: 35%;
   right: 35px;
+}
+@media (max-width: 420px) {
+  main .cart-3 .owl-carousel .owl-nav .owl-next::after {
+    display: none;
+  }
 }
 main .cart-4 {
   padding: 50px 0;
@@ -3465,6 +3510,11 @@ main .product-detail-3 .owl-carousel .owl-nav .owl-prev::before {
   top: 35%;
   left: 35px;
 }
+@media (max-width: 420px) {
+  main .product-detail-3 .owl-carousel .owl-nav .owl-prev::before {
+    display: none;
+  }
+}
 main .product-detail-3 .owl-carousel .owl-nav .owl-next {
   font-family: "fontAwesome";
 }
@@ -3478,6 +3528,11 @@ main .product-detail-3 .owl-carousel .owl-nav .owl-next::after {
   position: absolute;
   top: 35%;
   right: 35px;
+}
+@media (max-width: 420px) {
+  main .product-detail-3 .owl-carousel .owl-nav .owl-next::after {
+    display: none;
+  }
 }
 
 footer {
