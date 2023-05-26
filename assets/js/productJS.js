@@ -15,6 +15,7 @@ btnShowSort.addEventListener("click",()=>{
 
 //filter
 let filterArea = document.querySelector(".filter-area");
+let filterContainer = document.querySelector(".filter-container");
 let btnShowFilter = document.querySelector(".filter");
 let btnCloseFilter = document.querySelector(".close-filter");
 btnShowFilter.addEventListener('click',()=>{
@@ -22,6 +23,12 @@ btnShowFilter.addEventListener('click',()=>{
 });
 btnCloseFilter.addEventListener('click',()=>{
     filterArea.style.transform = "translateX(-100%)";
+});
+filterArea.addEventListener('click',()=>{
+    filterArea.style.transform = "translateX(-100%)";
+});
+filterContainer.addEventListener('click',(e)=>{
+    e.stopPropagation();
 });
 
     //dropdown list product

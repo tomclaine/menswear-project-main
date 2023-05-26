@@ -1995,6 +1995,16 @@ main .product-2 .owl-carousel .owl-nav .owl-next::after {
   }
 }
 main .filter-area {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+main .filter-area .filter-container {
   box-shadow: 0px 0px 10px -5px #818181;
   background: white;
   min-width: 450px;
@@ -2005,106 +2015,104 @@ main .filter-area {
   left: 0;
   display: flex;
   flex-direction: column;
-  transform: translateX(-100%);
-  transition: all 0.5s;
   overflow-y: scroll;
 }
 @media (max-width: 768px) {
-  main .filter-area {
+  main .filter-area .filter-container {
     min-width: 80%;
   }
 }
-main .filter-area .heading {
+main .filter-area .filter-container .heading {
   padding: 15px 0 15px 0;
   border-bottom: 1px solid #f3f3f3;
   width: 100%;
 }
-main .filter-area .heading h3 {
+main .filter-area .filter-container .heading h3 {
   font-size: 24px;
   padding-left: 15px;
 }
-main .filter-area .list-filter {
+main .filter-area .filter-container .list-filter {
   width: 100%;
   padding-top: 15px;
   padding-bottom: 400px;
   border-bottom: 1px solid #f3f3f3;
 }
 @media (max-width: 768px) {
-  main .filter-area .list-filter {
+  main .filter-area .filter-container .list-filter {
     padding-bottom: 20px;
   }
 }
-main .filter-area .list-filter ul {
+main .filter-area .filter-container .list-filter ul {
   padding-left: 15px;
 }
-main .filter-area .list-filter ul li {
+main .filter-area .filter-container .list-filter ul li {
   list-style: none;
   padding: 15px 0 15px 0;
 }
-main .filter-area .list-filter ul li .sub-product {
+main .filter-area .filter-container .list-filter ul li .sub-product {
   display: none;
 }
-main .filter-area .list-filter ul li .sub-product li a {
+main .filter-area .filter-container .list-filter ul li .sub-product li a {
   font-size: 16px;
 }
-main .filter-area .list-filter ul li .sub-product li:last-child {
+main .filter-area .filter-container .list-filter ul li .sub-product li:last-child {
   padding: 15px 0 0 0;
 }
-main .filter-area .list-filter ul li .sub-form {
+main .filter-area .filter-container .list-filter ul li .sub-form {
   padding: 15px 15px 0 0;
   display: none;
 }
-main .filter-area .list-filter ul li .sub-form table {
+main .filter-area .filter-container .list-filter ul li .sub-form table {
   width: 100%;
   border-spacing: 10px;
 }
 @media (max-width: 420px) {
-  main .filter-area .list-filter ul li .sub-form table {
+  main .filter-area .filter-container .list-filter ul li .sub-form table {
     border-spacing: 5px;
   }
 }
-main .filter-area .list-filter ul li .sub-form table td {
+main .filter-area .filter-container .list-filter ul li .sub-form table td {
   padding: 5px 10px;
   background: #f4f4f4;
   text-align: center;
   cursor: pointer;
 }
 @media (max-width: 420px) {
-  main .filter-area .list-filter ul li .sub-form table td {
+  main .filter-area .filter-container .list-filter ul li .sub-form table td {
     padding: 3px 5px;
     font-size: 14px;
   }
 }
-main .filter-area .list-filter ul li .sub-size {
+main .filter-area .filter-container .list-filter ul li .sub-size {
   padding: 15px 15px 0 0;
   display: none;
 }
-main .filter-area .list-filter ul li .sub-size table {
+main .filter-area .filter-container .list-filter ul li .sub-size table {
   width: 100%;
   border-spacing: 10px;
 }
-main .filter-area .list-filter ul li .sub-size table td {
+main .filter-area .filter-container .list-filter ul li .sub-size table td {
   padding: 5px 10px;
   background: #f4f4f4;
   text-align: center;
   cursor: pointer;
 }
 @media (max-width: 420px) {
-  main .filter-area .list-filter ul li .sub-size table td {
+  main .filter-area .filter-container .list-filter ul li .sub-size table td {
     font-size: 14px;
   }
 }
-main .filter-area .list-filter ul li .sub-color {
+main .filter-area .filter-container .list-filter ul li .sub-color {
   padding: 15px 15px 0 0;
   display: none;
 }
-main .filter-area .list-filter ul li .sub-color table {
+main .filter-area .filter-container .list-filter ul li .sub-color table {
   width: 100%;
 }
-main .filter-area .list-filter ul li .sub-color table td {
+main .filter-area .filter-container .list-filter ul li .sub-color table td {
   padding: 10px 10px 10px 0;
 }
-main .filter-area .list-filter ul li .sub-color table td .color {
+main .filter-area .filter-container .list-filter ul li .sub-color table td .color {
   cursor: pointer;
   margin: 0;
   border-radius: 50%;
@@ -2112,61 +2120,61 @@ main .filter-area .list-filter ul li .sub-color table td .color {
   height: 35px;
   border: 1px solid black;
 }
-main .filter-area .list-filter ul li .sub-color table td .color1 {
+main .filter-area .filter-container .list-filter ul li .sub-color table td .color1 {
   background: red;
 }
-main .filter-area .list-filter ul li .sub-color table td .color2 {
+main .filter-area .filter-container .list-filter ul li .sub-color table td .color2 {
   background: green;
 }
-main .filter-area .list-filter ul li .sub-color table td .color3 {
+main .filter-area .filter-container .list-filter ul li .sub-color table td .color3 {
   background: blue;
 }
-main .filter-area .list-filter ul li .sub-color table td .color4 {
+main .filter-area .filter-container .list-filter ul li .sub-color table td .color4 {
   background: yellow;
 }
-main .filter-area .list-filter ul li .sub-color table td .color5 {
+main .filter-area .filter-container .list-filter ul li .sub-color table td .color5 {
   background: orange;
 }
-main .filter-area .list-filter ul li .sub-color table td .color7 {
+main .filter-area .filter-container .list-filter ul li .sub-color table td .color7 {
   background: pink;
 }
-main .filter-area .list-filter ul li .sub-color table td .color8 {
+main .filter-area .filter-container .list-filter ul li .sub-color table td .color8 {
   background: black;
 }
-main .filter-area .list-filter ul li .sub-color table td .color9 {
+main .filter-area .filter-container .list-filter ul li .sub-color table td .color9 {
   background: violet;
 }
-main .filter-area .list-filter ul li .sub-color table td .color10 {
+main .filter-area .filter-container .list-filter ul li .sub-color table td .color10 {
   background: brown;
 }
-main .filter-area .list-filter ul li .sub-color table td .color11 {
+main .filter-area .filter-container .list-filter ul li .sub-color table td .color11 {
   background: olive;
 }
-main .filter-area .list-filter ul li .sub-color table td .color12 {
+main .filter-area .filter-container .list-filter ul li .sub-color table td .color12 {
   background: orangered;
 }
-main .filter-area .list-filter ul li .sub-color table td .color13 {
+main .filter-area .filter-container .list-filter ul li .sub-color table td .color13 {
   background: yellowgreen;
 }
-main .filter-area .list-filter ul li .sub-color table td .color14 {
+main .filter-area .filter-container .list-filter ul li .sub-color table td .color14 {
   background: orchid;
 }
-main .filter-area .list-filter ul li .sub-color table td .color15 {
+main .filter-area .filter-container .list-filter ul li .sub-color table td .color15 {
   background: burlywood;
 }
-main .filter-area .list-filter ul li .sub-price-range {
+main .filter-area .filter-container .list-filter ul li .sub-price-range {
   padding: 15px 15px 0 0;
   display: none;
 }
-main .filter-area .list-filter ul li .sub-price-range p {
+main .filter-area .filter-container .list-filter ul li .sub-price-range p {
   color: grey;
 }
-main .filter-area .list-filter ul li .sub-price-range .price-area {
+main .filter-area .filter-container .list-filter ul li .sub-price-range .price-area {
   display: flex;
   padding-top: 15px;
   width: 100%;
 }
-main .filter-area .list-filter ul li .sub-price-range .price-area input {
+main .filter-area .filter-container .list-filter ul li .sub-price-range .price-area input {
   outline: none;
   padding: 10px;
   margin-top: 10px;
@@ -2175,33 +2183,33 @@ main .filter-area .list-filter ul li .sub-price-range .price-area input {
   border: 1px solid grey;
 }
 @media (max-width: 768px) {
-  main .filter-area .list-filter ul li .sub-price-range .price-area input {
+  main .filter-area .filter-container .list-filter ul li .sub-price-range .price-area input {
     max-width: 150px;
   }
 }
 @media (max-width: 420px) {
-  main .filter-area .list-filter ul li .sub-price-range .price-area input {
+  main .filter-area .filter-container .list-filter ul li .sub-price-range .price-area input {
     max-width: 120px;
   }
 }
-main .filter-area .list-filter ul li .sub-price-range .price-area h3 {
+main .filter-area .filter-container .list-filter ul li .sub-price-range .price-area h3 {
   font-weight: 400;
 }
 @media (max-width: 768px) {
-  main .filter-area .list-filter ul li .sub-price-range .price-area h3 {
+  main .filter-area .filter-container .list-filter ul li .sub-price-range .price-area h3 {
     font-size: 15px;
   }
 }
-main .filter-area .list-filter ul li .sub-price-range .price-area .price-min {
+main .filter-area .filter-container .list-filter ul li .sub-price-range .price-area .price-min {
   margin-left: 0;
 }
-main .filter-area .list-filter ul li .sub-price-range .price-area .price-max {
+main .filter-area .filter-container .list-filter ul li .sub-price-range .price-area .price-max {
   margin-right: 0;
 }
-main .filter-area .list-filter ul li .sub-price-range .price-area .price-max h3 {
+main .filter-area .filter-container .list-filter ul li .sub-price-range .price-area .price-max h3 {
   text-align: right;
 }
-main .filter-area .list-filter ul li a {
+main .filter-area .filter-container .list-filter ul li a {
   text-decoration: none;
   color: black;
   font-size: 20px;
@@ -2209,19 +2217,19 @@ main .filter-area .list-filter ul li a {
   display: block;
   transition: all 0.3s;
 }
-main .filter-area .list-filter ul li a i {
+main .filter-area .filter-container .list-filter ul li a i {
   font-size: 15px;
   position: absolute;
   right: 15px;
 }
-main .filter-area .list-filter ul li a:hover {
+main .filter-area .filter-container .list-filter ul li a:hover {
   color: red;
 }
-main .filter-area .btns {
+main .filter-area .filter-container .btns {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-main .filter-area .btns .del-filter {
+main .filter-area .filter-container .btns .del-filter {
   padding: 15px 50px;
   border: none;
   margin-right: 5px;
@@ -2230,11 +2238,11 @@ main .filter-area .btns .del-filter {
   border-radius: 5px;
   font-size: 16px;
 }
-main .filter-area .btns .del-filter:hover {
+main .filter-area .filter-container .btns .del-filter:hover {
   background: red;
   color: white;
 }
-main .filter-area .btns .apply {
+main .filter-area .filter-container .btns .apply {
   padding: 15px 50px;
   border-radius: 5px;
   background: black;
@@ -2244,20 +2252,20 @@ main .filter-area .btns .apply {
   transition: all 0.5s;
   font-size: 16px;
 }
-main .filter-area .btns .apply:hover {
+main .filter-area .filter-container .btns .apply:hover {
   background: red;
 }
-main .filter-area .close-filter {
+main .filter-area .filter-container .close-filter {
   position: absolute;
   top: 15px;
   cursor: pointer;
   right: 15px;
 }
-main .filter-area .close-filter i {
+main .filter-area .filter-container .close-filter i {
   font-size: 30px;
   transition: all 0.3s;
 }
-main .filter-area .close-filter i:hover {
+main .filter-area .filter-container .close-filter i:hover {
   color: red;
 }
 main ::-webkit-scrollbar {

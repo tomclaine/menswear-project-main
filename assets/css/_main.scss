@@ -1388,259 +1388,269 @@ main{
         }
     }
     .filter-area{
-        box-shadow: 0px 0px 10px -5px #818181;
-        background: white;
-        min-width: 450px;
-        height: 100%;
+        width: 100%;
+        height: 100vh;
         position: fixed;
         top: 0;
-        z-index: 101;
         left: 0;
-        display: flex;
-        flex-direction: column;
+        background: rgba(0, 0, 0, 0);
         transform: translateX(-100%);
         transition: all 0.5s;
-        overflow-y: scroll;
-        @include breakpoint(tablet){
-            min-width: 80%;
-        }
-        .heading{
-            padding:15px 0 15px 0;
-            border-bottom:1px solid #f3f3f3;
-            width: 100%;
-            h3{
-                font-size: 24px;
-                padding-left: 15px;
-            }
-        }
-        .list-filter{
-            width: 100%;
-            padding-top: 15px;
-            padding-bottom: 400px;
-            border-bottom: 1px solid #f3f3f3;
+        .filter-container{
+            box-shadow: 0px 0px 10px -5px #818181;
+            background: white;
+            min-width: 450px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 101;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
             @include breakpoint(tablet){
-                padding-bottom: 20px;
+                min-width: 80%;
             }
-            ul{
-                padding-left: 15px;
-                li{
-                    list-style: none;
-                    padding: 15px 0 15px 0;
-                    .sub-product{
-                        display: none;
-                        li{
-                            a{
-                                font-size: 16px;
-                            }
-                        }
-                        li:last-child{
-                            padding: 15px 0 0 0;
-                        }
-                    }
-                    .sub-form{
-                        padding: 15px 15px 0 0;
-                        display: none;
-                        table{
-                            width: 100%;
-                            border-spacing: 10px;
-                            @include breakpoint(phone){
-                               border-spacing: 5px;
-                            }
-                            td{
-                                padding: 5px 10px;
-                                background: #f4f4f4;
-                                text-align: center;
-                                cursor: pointer;
-                                @include breakpoint(phone){
-                                    padding: 3px 5px;
-                                    font-size: 14px;
+            .heading{
+                padding:15px 0 15px 0;
+                border-bottom:1px solid #f3f3f3;
+                width: 100%;
+                h3{
+                    font-size: 24px;
+                    padding-left: 15px;
+                }
+            }
+            .list-filter{
+                width: 100%;
+                padding-top: 15px;
+                padding-bottom: 400px;
+                border-bottom: 1px solid #f3f3f3;
+                @include breakpoint(tablet){
+                    padding-bottom: 20px;
+                }
+                ul{
+                    padding-left: 15px;
+                    li{
+                        list-style: none;
+                        padding: 15px 0 15px 0;
+                        .sub-product{
+                            display: none;
+                            li{
+                                a{
+                                    font-size: 16px;
                                 }
                             }
-                        }
-                    }
-                    .sub-size{
-                        padding: 15px 15px 0 0;
-                        display: none;
-                        table{
-                            width: 100%;
-                            border-spacing: 10px;
-                            td{
-                                padding: 5px 10px;
-                                background: #f4f4f4;
-                                text-align: center;
-                                cursor: pointer;
-                                @include breakpoint(phone){
-                                    // padding: 3px 5px;
-                                    font-size: 14px;
-                                }
+                            li:last-child{
+                                padding: 15px 0 0 0;
                             }
                         }
-                    }
-                    .sub-color{
-                        padding: 15px 15px 0 0;
-                        display: none;
-                        table{
-                            width: 100%;
-                            td{
-                                padding: 10px 10px 10px 0;
-                                .color{
+                        .sub-form{
+                            padding: 15px 15px 0 0;
+                            display: none;
+                            table{
+                                width: 100%;
+                                border-spacing: 10px;
+                                @include breakpoint(phone){
+                                   border-spacing: 5px;
+                                }
+                                td{
+                                    padding: 5px 10px;
+                                    background: #f4f4f4;
+                                    text-align: center;
                                     cursor: pointer;
-                                    margin: 0;
-                                    border-radius: 50%;
-                                    width: 35px;
-                                    height: 35px;
-                                    border: 1px solid black;
-                                }
-                                .color1{
-                                    background: red;
-                                }
-                                .color2{
-                                    background: green;
-                                }
-                                .color3{
-                                    background: blue;
-                                }
-                                .color4{
-                                    background: yellow;
-                                }
-                                .color5{
-                                    background: orange;
-                                }
-                                .color7{
-                                    background: pink;
-                                }
-                                .color8{
-                                    background: black;
-                                }
-                                .color9{
-                                    background: violet;
-                                }
-                                .color10{
-                                    background: brown;
-                                }
-                                .color11{
-                                    background: olive;
-                                }
-                                .color12{
-                                    background: orangered;
-                                }
-                                .color13{
-                                    background: yellowgreen;
-                                }
-                                .color14{
-                                    background: orchid;
-                                }
-                                .color15{   
-                                    background: burlywood;
+                                    @include breakpoint(phone){
+                                        padding: 3px 5px;
+                                        font-size: 14px;
+                                    }
                                 }
                             }
                         }
-                    }
-                    .sub-price-range{
-                        padding: 15px 15px 0 0;
-                        display: none;
-                        p{
-                            color: grey;
+                        .sub-size{
+                            padding: 15px 15px 0 0;
+                            display: none;
+                            table{
+                                width: 100%;
+                                border-spacing: 10px;
+                                td{
+                                    padding: 5px 10px;
+                                    background: #f4f4f4;
+                                    text-align: center;
+                                    cursor: pointer;
+                                    @include breakpoint(phone){
+                                        // padding: 3px 5px;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
                         }
-                        .price-area{
-                            display: flex;
-                            padding-top: 15px;
-                            width: 100%;
-                            input{
-                                outline: none;
-                                padding: 10px;
-                                margin-top: 10px;
-                                font-size: 16px;
-                                border-radius: 5px;
-                                border: 1px solid grey;
-                                @include breakpoint(tablet){
-                                    max-width: 150px;
-                                }
-
-                                @include breakpoint(phone){
-                                    max-width: 120px;
+                        .sub-color{
+                            padding: 15px 15px 0 0;
+                            display: none;
+                            table{
+                                width: 100%;
+                                td{
+                                    padding: 10px 10px 10px 0;
+                                    .color{
+                                        cursor: pointer;
+                                        margin: 0;
+                                        border-radius: 50%;
+                                        width: 35px;
+                                        height: 35px;
+                                        border: 1px solid black;
+                                    }
+                                    .color1{
+                                        background: red;
+                                    }
+                                    .color2{
+                                        background: green;
+                                    }
+                                    .color3{
+                                        background: blue;
+                                    }
+                                    .color4{
+                                        background: yellow;
+                                    }
+                                    .color5{
+                                        background: orange;
+                                    }
+                                    .color7{
+                                        background: pink;
+                                    }
+                                    .color8{
+                                        background: black;
+                                    }
+                                    .color9{
+                                        background: violet;
+                                    }
+                                    .color10{
+                                        background: brown;
+                                    }
+                                    .color11{
+                                        background: olive;
+                                    }
+                                    .color12{
+                                        background: orangered;
+                                    }
+                                    .color13{
+                                        background: yellowgreen;
+                                    }
+                                    .color14{
+                                        background: orchid;
+                                    }
+                                    .color15{   
+                                        background: burlywood;
+                                    }
                                 }
                             }
-                            h3{
-                                font-weight: 400;
-                                @include breakpoint(tablet){
-                                    font-size: 15px;
+                        }
+                        .sub-price-range{
+                            padding: 15px 15px 0 0;
+                            display: none;
+                            p{
+                                color: grey;
+                            }
+                            .price-area{
+                                display: flex;
+                                padding-top: 15px;
+                                width: 100%;
+                                input{
+                                    outline: none;
+                                    padding: 10px;
+                                    margin-top: 10px;
+                                    font-size: 16px;
+                                    border-radius: 5px;
+                                    border: 1px solid grey;
+                                    @include breakpoint(tablet){
+                                        max-width: 150px;
+                                    }
+    
+                                    @include breakpoint(phone){
+                                        max-width: 120px;
+                                    }
                                 }
-                            }
-                            .price-min{
-                                margin-left: 0;
-                                
-                            }
-                            .price-max{
-                                margin-right: 0;
                                 h3{
-                                    text-align: right;
+                                    font-weight: 400;
+                                    @include breakpoint(tablet){
+                                        font-size: 15px;
+                                    }
+                                }
+                                .price-min{
+                                    margin-left: 0;
+                                    
+                                }
+                                .price-max{
+                                    margin-right: 0;
+                                    h3{
+                                        text-align: right;
+                                    }
                                 }
                             }
                         }
-                    }
-                    a{
-                        text-decoration: none;
-                        color: black;
-                        font-size: 20px;
-                        position: relative;
-                        display: block;
-                        transition: all 0.3s;
-                        i{
-                            font-size: 15px;
-                            position: absolute;
-                            right: 15px;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            font-size: 20px;
+                            position: relative;
+                            display: block;
+                            transition: all 0.3s;
+                            i{
+                                font-size: 15px;
+                                position: absolute;
+                                right: 15px;
+                            }
                         }
-                    }
-                    a:hover{
-                        color: red;
+                        a:hover{
+                            color: red;
+                        }
                     }
                 }
             }
-        }
-        .btns{
-            padding-top: 20px;
-            padding-bottom: 20px;
-            .del-filter{
-                padding: 15px 50px;
-                border: none;
-                margin-right: 5px;
-                transition: all 0.5s;
+            .btns{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                .del-filter{
+                    padding: 15px 50px;
+                    border: none;
+                    margin-right: 5px;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    font-size: 16px;
+                }
+                .del-filter:hover{
+                    background: red;
+                    color: white;
+                }
+                .apply{
+                    padding: 15px 50px;
+                    border-radius: 5px;
+                    background: black;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    transition: all 0.5s;
+                    font-size: 16px;
+                }
+                .apply:hover{
+                    background: red;
+                }
+            }
+            .close-filter{
+                position: absolute;
+                top: 15px;
                 cursor: pointer;
-                border-radius: 5px;
-                font-size: 16px;
-            }
-            .del-filter:hover{
-                background: red;
-                color: white;
-            }
-            .apply{
-                padding: 15px 50px;
-                border-radius: 5px;
-                background: black;
-                color: white;
-                border: none;
-                cursor: pointer;
-                transition: all 0.5s;
-                font-size: 16px;
-            }
-            .apply:hover{
-                background: red;
+                right: 15px;
+                i{
+                    font-size: 30px;
+                    transition: all 0.3s;
+                }
+                i:hover{
+                    color: red;
+                }
             }
         }
-        .close-filter{
-            position: absolute;
-            top: 15px;
-            cursor: pointer;
-            right: 15px;
-            i{
-                font-size: 30px;
-                transition: all 0.3s;
-            }
-            i:hover{
-                color: red;
-            }
-        }  
+        
+          
     }
     ::-webkit-scrollbar{
         width: 5px;
