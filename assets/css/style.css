@@ -439,6 +439,7 @@
   width: 100vw;
   height: 100%;
   position: fixed;
+  z-index: 105;
   top: 0;
   background: rgba(0, 0, 0, 0);
   transform: translateY(-100%);
@@ -450,6 +451,7 @@
   min-height: 150px;
   display: flex;
   align-items: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 .searchTop-area .searchTop .input-width-btn {
   position: relative;
