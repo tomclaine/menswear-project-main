@@ -1,7 +1,6 @@
 let thisPage = 1;
 let limit = 8;
 let lists = document.querySelectorAll(".list-product .card");
-console.log(lists);
 
 function loadItem(){
     let beginGet = limit * (thisPage - 1);

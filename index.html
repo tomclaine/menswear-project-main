@@ -29,17 +29,24 @@
                                 </span> 
                             </a>
                             <span>|</span> 
-                            <a href="" class="login">
-                                <span>
-                                    Đăng nhập
-                                </span>
-                            </a>
-                            <span>/</span>
-                            <a href="" class="register">
-                                <span>
-                                    Đăng ký
-                                </span>
-                            </a>
+                            <div class="log-regis-area">
+                                <a href="" class="login">
+                                    <span>
+                                        Đăng nhập
+                                    </span>
+                                </a>
+                                <span>/</span>
+                                <a href="" class="register">
+                                    <span>
+                                        Đăng ký
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="hi-customer">
+                                Xin chào,<span class="name-customer"></span>
+                                <span>|</span>
+                                <a href="#">Đăng xuất</a>
+                            </div>
                         </li> 
                     </ul>
                 </div>
@@ -104,10 +111,12 @@
 <!--Login-Area-->
         <div class="login-area">
             <h3>ĐĂNG NHẬP</h3>
-        <form action="">
-                <input type="text" placeholder="Nhập số điện thoại">
-                <input type="password" placeholder="Nhập mật khẩu">
-                <button type="submit">ĐĂNG NHẬP</button>
+            <form action="">
+                <input type="text" placeholder="Nhập tên đăng nhập" class="input-log-username">
+                <div class="pass-area">
+                    <input type="password" placeholder="Nhập mật khẩu" class="input-log-pass"><i class="fa-regular fa-eye-slash pw-hide"></i>
+                </div> 
+                <button type="submit" class="btn-login">ĐĂNG NHẬP</button>
             </form>
             <p>Bạn chưa có tài khoản? <a href="" class="registerOnLog">Đăng ký</a></p>
             <span class="closeLog"><i class="fa-solid fa-xmark"></i></span>
@@ -117,10 +126,12 @@
         <div class="register-area">
             <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
             <form action="">
-                <input type="text" placeholder="Họ và tên">
-                <input type="text" placeholder="Nhập số điện thoại">
-                <input type="password" placeholder="Nhập mật khẩu">
-                <button type="submit">ĐĂNG KÝ</button>
+                <input type="text" placeholder="Họ và tên" class="input-regis-name">
+                <input type="text" placeholder="Nhập tên đăng nhập" class="input-regis-username">
+                <div class="pass-area">
+                    <input type="password" placeholder="Nhập mật khẩu" class="input-regis-pass"><i class="fa-regular fa-eye-slash pw-hide"></i>
+                </div>               
+                <button type="submit" class="btn-register">ĐĂNG KÝ</button>
             </form>
             <p>Bạn chưa có tài khoản? <a href="" class="loginOnRegis">Đăng nhập</a></p>
             <span class="closeRegis"><i class="fa-solid fa-xmark"></i></span>

@@ -7,6 +7,22 @@ let changeLog = document.querySelector(".loginOnRegis");
 let changeRegis = document.querySelector(".registerOnLog");
 let closeLog = document.querySelector(".closeLog");
 let closeRegis = document.querySelector(".closeRegis");
+let pwdShowHide = document.querySelectorAll(".pw-hide");
+
+
+pwdShowHide.forEach((icon)=>{
+    icon.addEventListener("click",()=>{
+        let getPwInput = icon.parentElement.querySelector("input");
+        if(getPwInput.type === "password"){
+            getPwInput.type = "text";
+            icon.classList.replace("fa-eye-slash","fa-eye");
+        }
+        else{
+            getPwInput.type = "password";
+            icon.classList.replace("fa-eye","fa-eye-slash");
+        }
+    })   
+})
 
 for(btnShowLogin of btnShowLogins){
     btnShowLogin.addEventListener("click",(e)=>{
@@ -100,7 +116,59 @@ backTop.addEventListener("click",()=>{
 });
 
 
+//login/register in localstorage
+//register
+let inputNameRegis = document.querySelector(".input-regis-name");
+let inputUsernameRegis = document.querySelector(".input-regis-username");
+let inputPassRegis = document.querySelector(".input-regis-pass");
+let btnRegister = document.querySelector(".btn-register");
 
+btnRegister.addEventListener("click",(e)=>{
+    e.preventDefault();
+    if(inputNameRegis.value==""||inputUsernameRegis.value==""||inputPassRegis.value==""){
+        alert("Vui lòng nhập đầy đủ thông tin");
+    }
+    else{
+        const user = {
+            username: inputUsernameRegis.value,
+            password: inputPassRegis.value,
+            name: inputNameRegis.value
+        }
+        let json = JSON.stringify(user);
+        localStorage.setItem(inputUsernameRegis.value,json);
+        alert("Đăng ký thành công!");
+        loginArea.style.transform = "translateX(0)";
+        registerArea.style.transform = "translateX(100%)";
+    }
+})
+
+
+//login
+let inputUsernameLogin = document.querySelector(".input-log-username");
+let inputPassLogin = document.querySelector(".input-log-pass");
+let btnLogin = document.querySelector(".btn-login");
+let logRegisArea = document.querySelector(".log-regis-area");
+let hiCustomer = document.querySelector(".hi-customer");
+let nameCustomer = document.querySelector(".name-customer");
+
+btnLogin.addEventListener("click",(e)=>{
+    e.preventDefault();
+    if(inputUsernameLogin==""||inputPassLogin==""){
+        alert("Vui lòng nhập đầy đủ thông tin")
+    }else{
+        const user = JSON.parse(localStorage.getItem(inputUsernameLogin.value))
+        if(user.username===inputUsernameLogin.value && user.password===inputPassLogin.value){
+            alert("Đăng nhập thành công!");
+            loginArea.style.transform = "translateX(100%)";
+            logRegisArea.style.display = "none";
+            hiCustomer.style.display = "block";
+            nameCustomer.innerText = user.name;
+        }
+        else{
+            alert("Đăng nhập thất bại!");
+        }
+    }
+})
 
 
 

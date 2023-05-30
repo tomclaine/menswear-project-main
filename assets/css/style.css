@@ -64,6 +64,8 @@
   list-style: none;
   height: 40px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .header_top .header_top-items ul li span {
   margin: 0 5px;
@@ -76,6 +78,12 @@
 .header_top .header_top-items ul li a span {
   line-height: 40px;
   margin: 0 3px;
+}
+.header_top .header_top-items ul li a:hover {
+  color: rgb(255, 155, 155);
+}
+.header_top .header_top-items ul li .hi-customer {
+  display: none;
 }
 
 .banner {
@@ -334,10 +342,21 @@
   margin: 0;
   width: 80%;
 }
+.login-area form div.pass-area {
+  margin: 0;
+  position: relative;
+}
+.login-area form div.pass-area i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 .login-area form input {
   padding: 6px 12px;
   width: 100%;
-  margin-bottom: 10px;
+  margin: 5px 0;
   outline: none;
   border: 1px solid #ced4da;
   border-radius: 5px;
@@ -354,6 +373,7 @@
   cursor: pointer;
   margin-bottom: 30px;
   border-radius: 5px;
+  margin-top: 10px;
 }
 .login-area span {
   position: absolute;
@@ -400,10 +420,21 @@
   margin: 0;
   width: 80%;
 }
+.register-area form div.pass-area {
+  margin: 0;
+  position: relative;
+}
+.register-area form div.pass-area i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 .register-area form input {
   padding: 6px 12px;
   width: 100%;
-  margin-bottom: 10px;
+  margin: 5px 0;
   outline: none;
   border: 1px solid #ced4da;
   border-radius: 5px;
@@ -420,6 +451,7 @@
   cursor: pointer;
   margin-bottom: 30px;
   border-radius: 5px;
+  margin-top: 10px;
 }
 .register-area span {
   position: absolute;
