@@ -150,6 +150,7 @@ let btnLogin = document.querySelector(".btn-login");
 let logRegisArea = document.querySelector(".log-regis-area");
 let hiCustomer = document.querySelector(".hi-customer");
 let nameCustomer = document.querySelector(".name-customer");
+let logOut = document.querySelector(".log-out");
 
 btnLogin.addEventListener("click",(e)=>{
     e.preventDefault();
@@ -168,6 +169,12 @@ btnLogin.addEventListener("click",(e)=>{
             alert("Đăng nhập thất bại!");
         }
     }
+})
+logOut.addEventListener("click",(e)=>{
+    e.preventDefault();
+    alert("Bạn đã đăng xuất tài khoản thành viên!");
+    logRegisArea.style.display = "block";
+    hiCustomer.style.display = "none";
 })
 
 
