@@ -499,8 +499,12 @@ main{
             line-height: 1.6em;
             font-style: italic;
             margin-bottom: 70px;
+            @include breakpoint(tablet){
+                width: 60%;
+            }
             @include breakpoint(phone){
                 font-size: 14px;
+                width: 80%;
             }
         }
         .info-customer{

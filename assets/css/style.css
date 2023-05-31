@@ -1105,9 +1105,15 @@ main .feedback-area .content-feedback {
   font-style: italic;
   margin-bottom: 70px;
 }
+@media (max-width: 768px) {
+  main .feedback-area .content-feedback {
+    width: 60%;
+  }
+}
 @media (max-width: 420px) {
   main .feedback-area .content-feedback {
     font-size: 14px;
+    width: 80%;
   }
 }
 main .feedback-area .info-customer {
