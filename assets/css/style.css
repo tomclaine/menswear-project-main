@@ -270,7 +270,7 @@
   text-align: center;
   padding: 10px 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 1366px) {
   .slogan {
     min-width: 250px;
     min-height: 300px;
@@ -302,9 +302,9 @@
   font-size: 80px;
   margin: 10px 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 1366px) {
   .slogan h3 {
-    font-size: 35px;
+    font-size: 40px;
   }
 }
 .slogan i {
