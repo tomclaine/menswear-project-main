@@ -11,7 +11,7 @@
         align-items: center;
         justify-content: flex-end;
         @include breakpoint(desktop){
-            display: none;
+            // display: none;
         }
         ul{ 
             padding: 0; 

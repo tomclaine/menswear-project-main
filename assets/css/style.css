@@ -50,11 +50,6 @@
   align-items: center;
   justify-content: flex-end;
 }
-@media (max-width: 1366px) {
-  .header_top .header_top-items {
-    display: none;
-  }
-}
 .header_top .header_top-items ul {
   padding: 0;
   height: 40px;
