@@ -10,6 +10,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        font-size: 14px;
         @include breakpoint(desktop){
             // display: none;
         }
