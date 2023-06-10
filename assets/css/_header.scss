@@ -92,7 +92,7 @@
                 letter-spacing: 10px;
                 font-weight: 700;
                 @include breakpoint(desktop){
-                    font-size: 30px;
+                    font-size: 40px;
                 }
                 @include breakpoint(tablet){
                     font-size: 30px;
@@ -110,10 +110,14 @@
             }
             ul{
                 align-items: center;
+                // justify-content: center;
                 li{
                     margin: 0 30px;
                     a{
                         font-size: 20px;
+                        @include breakpoint(desktop){
+                            font-size: 16px;
+                        }
                     }
                     @include breakpoint(desktop){
                         margin: 0 10px;
@@ -221,7 +225,8 @@
     @include breakpoint(phone){
         border: 3px solid white;
         padding: 10px;
-        min-width: 250px;
+        min-width: 200px;
+        min-height: 250px;
     }
     p{
         font-size: 25px;
@@ -237,6 +242,9 @@
         margin: 10px 0;
         @include breakpoint(desktop){
             font-size: 40px;
+        }
+        @include breakpoint(phone){
+            font-size: 30px;
         }
     }
     i{

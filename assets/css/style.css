@@ -137,7 +137,7 @@
 }
 @media (max-width: 1366px) {
   .banner .header_main .header_main-logo a {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 @media (max-width: 768px) {
@@ -167,6 +167,11 @@
 }
 .banner .header_main .header_main-navbar ul li a {
   font-size: 20px;
+}
+@media (max-width: 1366px) {
+  .banner .header_main .header_main-navbar ul li a {
+    font-size: 16px;
+  }
 }
 @media (max-width: 1366px) {
   .banner .header_main .header_main-navbar ul li {
@@ -282,7 +287,8 @@
   .slogan {
     border: 3px solid white;
     padding: 10px;
-    min-width: 250px;
+    min-width: 200px;
+    min-height: 250px;
   }
 }
 .slogan p {
@@ -305,6 +311,11 @@
 @media (max-width: 1366px) {
   .slogan h3 {
     font-size: 40px;
+  }
+}
+@media (max-width: 420px) {
+  .slogan h3 {
+    font-size: 30px;
   }
 }
 .slogan i {
