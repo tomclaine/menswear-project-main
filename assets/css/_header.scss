@@ -101,7 +101,7 @@
             }
         }
         .header_main-navbar{
-            width: 40%;
+            width: 60%;
             @include breakpoint(desktop){
                 width: 60%;
                 font-size: 14px;
@@ -115,7 +115,7 @@
                 li{
                     margin: 0 30px;
                     a{
-                        font-size: 20px;
+                        font-size: 18px;
                         @include breakpoint(desktop){
                             font-size: 18px;
                         }
@@ -230,7 +230,7 @@
         min-height: 250px;
     }
     p{
-        font-size: 25px;
+        font-size: 20px;
         @include breakpoint(tablet){
             font-size: 18px;
         }
@@ -239,7 +239,7 @@
         }
     }
     h3{
-        font-size: 80px;
+        font-size: 75px;
         margin: 10px 0;
         @include breakpoint(desktop){
             font-size: 40px;
